@@ -1,0 +1,2030 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Build a 7-Figure Firm Without Burning Out - Account Ability</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS (Animate On Scroll) library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <!-- GSAP for advanced animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- Custom fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Lato:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <script>
+    // Properly configure Tailwind with our custom theme
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#002147',
+            secondary: '#7EC8E3',
+            accent: '#A8D5BA',
+            neutral: '#F9FAFC',
+            dark: '#001233',
+            light: '#F5F9FF',
+            softBlue: '#E6F4F1',
+            softGreen: '#EAF5F0',
+            softPurple: '#F0EFF4',
+            softGray: '#F0F2F5'
+          },
+          fontFamily: {
+            'montserrat': ['Montserrat', 'sans-serif'],
+            'lato': ['Lato', 'sans-serif'],
+          },
+          backgroundImage: {
+            'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+            'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+            'blob-pattern': "url(\"data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23002147' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E\")"
+          },
+          boxShadow: {
+            'soft': '0 2px 15px rgba(0, 0, 0, 0.05)',
+            'soft-lg': '0 10px 25px rgba(0, 0, 0, 0.05)',
+            'inner-soft': 'inset 0 2px 10px 0 rgba(0, 0, 0, 0.04)',
+          }
+        },
+      }
+    }
+  </script>
+  <style>
+    /* Custom CSS variables for consistency */
+    :root {
+      --primary: #002147;
+      --secondary: #7EC8E3;
+      --accent: #A8D5BA;
+      --neutral: #F9FAFC;
+      --dark: #001233;
+      --light: #F5F9FF;
+      --softBlue: #E6F4F1;
+      --softGreen: #EAF5F0;
+      --softPurple: #F0EFF4;
+      --softGray: #F0F2F5;
+    }
+
+    /* Global styling */
+    body {
+      font-family: 'Lato', sans-serif;
+      scroll-behavior: smooth;
+      background-color: #F9FAFB;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Custom animations */
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+
+    .hover-scale:hover {
+      transform: scale(1.03);
+    }
+
+    /* Custom gradient for buttons */
+    .btn-gradient {
+      background: linear-gradient(135deg, var(--primary) 0%, #001a38 100%);
+      transition: all 0.3s ease;
+    }
+
+    .btn-gradient:hover {
+      box-shadow: 0 10px 20px rgba(0, 33, 71, 0.3);
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--primary);
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--secondary);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header Section with enhanced visuals -->
+  <header class="relative bg-primary text-white overflow-hidden">
+    <!-- Background Pattern Elements for visual interest with parallax effect -->
+    <div
+      class="absolute top-0 right-0 w-96 h-96 bg-secondary opacity-10 rounded-full -translate-y-1/2 translate-x-1/4 parallax-bg"
+      data-speed="0.2"></div>
+    <div
+      class="absolute bottom-0 left-0 w-64 h-64 bg-accent opacity-10 rounded-full translate-y-1/4 -translate-x-1/4 parallax-bg"
+      data-speed="-0.1"></div>
+    <div class="absolute top-1/4 left-1/4 w-32 h-32 bg-primary opacity-5 rounded-full parallax-bg" data-speed="0.15">
+    </div>
+    <div class="absolute bottom-1/4 right-1/3 w-48 h-48 bg-secondary opacity-5 rounded-full parallax-bg"
+      data-speed="-0.2"></div>
+
+    <!-- Navigation with enhanced styling -->
+    <nav class="container mx-auto flex items-center justify-between py-5 px-6 md:px-8 relative z-10">
+      <!-- Logo with subtle animation -->
+      <div class="flex items-center space-x-2 group">
+        <div
+          class="w-10 h-10 bg-accent rounded-lg flex items-center justify-center transition-transform group-hover:rotate-12">
+          <span class="font-montserrat font-bold text-primary">A</span>
+        </div>
+        <span class="font-montserrat font-bold text-2xl">Account Ability</span>
+      </div>
+
+      <!-- Main Nav Links for larger screens with modern styling -->
+      <div class="hidden lg:flex items-center space-x-8">
+        <a href="#learn" class="font-montserrat text-gray-600 hover:text-primary transition-colors">What You'll
+          Learn</a>
+        <a href="#audience" class="font-montserrat text-gray-600 hover:text-primary transition-colors">Who It's For</a>
+        <a href="#instructors" class="font-montserrat text-gray-600 hover:text-primary transition-colors">Meet The
+          Team</a>
+      </div>
+
+      <!-- CTA Button in Navigation -->
+      <a href="#register"
+        class="hidden md:flex items-center bg-primary hover:bg-primary/90 text-white font-montserrat font-semibold py-2.5 px-6 rounded-md transition-all hover:shadow-lg">
+        <span>Register</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+    </nav>
+
+    <!-- Hero Section with enhanced layout and animations -->
+    <div class="container mx-auto py-16 md:py-28 px-6 md:px-8">
+      <div class="grid md:grid-cols-12 gap-8 items-center">
+        <!-- Hero Text Content - Takes 7 columns on desktop -->
+        <div class="md:col-span-7" data-aos="fade-right" data-aos-duration="1000">
+          <div
+            class="inline-block px-4 py-1.5 bg-secondary text-primary font-montserrat font-bold rounded-full mb-6 text-sm hero-element">
+            FREE EXCLUSIVE WEBINAR
+          </div>
+          <h1 class="font-montserrat font-bold text-4xl md:text-5xl xl:text-6xl leading-tight mb-6 hero-element">
+            Build a <span class="text-accent">7-Figure Firm</span> Without Burning Out or Hiring Full-Time Staff
+          </h1>
+          <p class="font-lato text-lg md:text-xl mb-8 text-white/80 max-w-2xl hero-element">
+            Discover the plug-and-play offshore system top firms use to scale fast and stay lean.
+            <span class="text-accent font-semibold">No burnout, no guesswork required.</span>
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 items-center sm:items-start hero-element">
+            <a href="#register"
+              class="bg-accent hover:bg-accent/90 text-primary font-montserrat font-bold py-3.5 px-10 rounded-full inline-block transition-all hover:shadow-[0_8px_20px_rgba(168,213,186,0.5)] transform hover:-translate-y-1 w-full sm:w-auto text-center">
+              Register Now - It's Free
+            </a>
+            <div class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span class="text-white/80 font-lato">60 minutes, September 15, 2025</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual - Takes 5 columns on desktop -->
+        <div class="md:col-span-5 relative" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+          <!-- Main webinar card with floating effect -->
+          <div
+            class="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-1.5 shadow-xl hover:-translate-y-2 transition-all duration-500 z-20">
+            <div class="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden">
+              <!-- Image placeholder - replace with your webinar promo image -->
+              <div class="w-full h-60 lg:h-72 bg-secondary/20 relative overflow-hidden">
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <!-- Overlay text on image -->
+                  <div class="text-center px-6">
+                    <p class="font-montserrat font-bold text-white text-xl mb-2">How We Hit 7-Figures</p>
+                    <p class="font-lato text-white/80 mb-4">with an Offshore Dream Team</p>
+                  </div>
+                </div>
+
+                <!-- Play button overlay -->
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div
+                    class="w-16 h-16 rounded-full bg-accent/90 flex items-center justify-center cursor-pointer hover:bg-accent transition-colors play-button relative group">
+                    <!-- Ripple animation effect -->
+                    <div
+                      class="absolute inset-0 rounded-full bg-accent opacity-50 scale-0 group-hover:scale-150 transition-transform duration-700">
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary ml-1 relative z-10" fill="none"
+                      viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Webinar details card -->
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-4">
+                  <p class="font-montserrat font-bold text-white text-lg">September 15, 2025</p>
+                  <p class="font-lato text-white/80 bg-primary px-3 py-1 rounded-full text-sm">2:00 PM EST</p>
+                </div>
+
+                <!-- Presenters -->
+                <div class="flex items-center space-x-4">
+                  <div class="flex -space-x-3">
+                    <div
+                      class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center border-2 border-primary">
+                      <span class="font-bold text-primary">S</span>
+                    </div>
+                    <div
+                      class="w-10 h-10 rounded-full bg-accent flex items-center justify-center border-2 border-primary">
+                      <span class="font-bold text-primary">I</span>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="font-lato text-white/90">Hosted by</p>
+                    <p class="font-montserrat font-semibold text-white">Steve & Ibrahim</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Decorative elements with enhanced styling -->
+          <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-accent/30 rounded-full blur-md -z-10"></div>
+          <div class="absolute -top-6 -left-6 w-24 h-24 bg-secondary/30 rounded-full blur-md -z-10"></div>
+
+          <!-- Floating elements for visual interest -->
+          <div class="absolute top-1/4 right-1/3 w-10 h-10 bg-secondary/40 rounded-full animate-pulse"></div>
+          <div class="absolute bottom-1/3 left-1/4 w-6 h-6 bg-accent/40 rounded-full animate-pulse delay-700"></div>
+        </div>
+      </div>
+
+      <!-- Quick stats/social proof below hero -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16" data-aos="fade-up" data-aos-delay="600">
+        <div
+          class="bg-white/5 backdrop-blur-sm rounded-xl p-6 flex items-center space-x-4 transform hover:-translate-y-1 transition-all">
+          <div class="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <div>
+            <p class="font-montserrat font-bold text-white text-xl">50% Lower Costs</p>
+            <p class="font-lato text-white/70">Reduce payroll while scaling</p>
+          </div>
+        </div>
+
+        <div
+          class="bg-white/5 backdrop-blur-sm rounded-xl p-6 flex items-center space-x-4 transform hover:-translate-y-1 transition-all">
+          <div class="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+            </svg>
+          </div>
+          <div>
+            <p class="font-montserrat font-bold text-white text-xl">3x Client Capacity</p>
+            <p class="font-lato text-white/70">Serve more clients effortlessly</p>
+          </div>
+        </div>
+
+        <div
+          class="bg-white/5 backdrop-blur-sm rounded-xl p-6 flex items-center space-x-4 transform hover:-translate-y-1 transition-all">
+          <div class="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div>
+            <p class="font-montserrat font-bold text-white text-xl">20+ Hours Saved</p>
+            <p class="font-lato text-white/70">Reclaim your time each week</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Pain Points Section - New addition -->
+    <section class="py-16 md:py-20 bg-white" id="challenges">
+      <div class="container mx-auto px-6 md:px-8">
+        <div class="text-center mb-12" data-aos="fade-up">
+          <h2 class="font-montserrat font-bold text-3xl md:text-4xl text-primary mb-4">Feeling Stuck?</h2>
+          <p class="font-lato text-lg text-gray-600 max-w-3xl mx-auto">
+            Are you an accounting professional or firm owner who's facing these challenges?
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+          <!-- Pain Point 1 -->
+          <div
+            class="bg-neutral/50 rounded-2xl p-8 shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+            data-aos="fade-up" data-aos-delay="100">
+            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="font-montserrat font-bold text-xl mb-4 text-primary">Doing Everything Yourself</h3>
+            <p class="font-lato text-gray-600">
+              You're tired of being the bookkeeper, accountant, project manager, and customer service rep all at once,
+              leading to burnout and limited growth.
+            </p>
+          </div>
+
+          <!-- Pain Point 2 -->
+          <div
+            class="bg-neutral/50 rounded-2xl p-8 shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+            data-aos="fade-up" data-aos-delay="200">
+            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11" />
+              </svg>
+            </div>
+            <h3 class="font-montserrat font-bold text-xl mb-4 text-primary">Growing Workload, No Help</h3>
+            <p class="font-lato text-gray-600">
+              You're stuck with a growing client list and workload, but no scalable team to help you manage it all
+              without sacrificing quality.
+            </p>
+          </div>
+
+          <!-- Pain Point 3 -->
+          <div
+            class="bg-neutral/50 rounded-2xl p-8 shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+            data-aos="fade-up" data-aos-delay="300">
+            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+              </svg>
+            </div>
+            <h3 class="font-montserrat font-bold text-xl mb-4 text-primary">Outsourcing Risks</h3>
+            <p class="font-lato text-gray-600">
+              You're worried outsourcing is risky, ineffective, or just another headache to manage on top of your
+              already full plate.
+            </p>
+          </div>
+        </div>
+
+        <!-- Solution Card - Modern Design with 3D effects -->
+        <div
+          class="relative bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-500 hover:shadow-2xl"
+          data-aos="fade-up" data-aos-delay="400">
+          <!-- Background pattern -->
+          <div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full -mr-32 -mt-32"></div>
+          <div class="absolute bottom-0 left-0 w-64 h-64 bg-accent/5 rounded-full -ml-32 -mb-32"></div>
+
+          <!-- Gradient border top -->
+          <div class="bg-gradient-to-r from-primary via-accent to-secondary h-2 w-full"></div>
+
+          <!-- Card content -->
+          <div class="relative z-10 p-8 md:p-12">
+            <div class="flex flex-col md:flex-row gap-8 items-start">
+              <!-- Icon part -->
+              <div class="flex-shrink-0">
+                <div
+                  class="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 shadow-soft flex items-center justify-center transform transition-transform duration-500 hover:scale-110">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Content part -->
+              <div>
+                <span
+                  class="inline-block px-4 py-1.5 bg-primary/10 text-primary font-montserrat font-bold rounded-full mb-4 text-sm">THE
+                  SOLUTION</span>
+                <h3 class="font-montserrat font-bold text-2xl md:text-3xl mb-4 text-dark">You're not alone — and there's
+                  a better way</h3>
+                <p class="font-lato text-lg text-gray-600 mb-8 leading-relaxed">
+                  We've been exactly where you are. That's why we developed a proven offshore outsourcing system
+                  specifically designed for accounting firms that allows you to:
+                </p>
+
+                <!-- Modern solution points -->
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div class="bg-white rounded-lg p-4 shadow-md border-l-4 border-primary flex items-start">
+                    <div
+                      class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p class="font-lato text-gray-700 font-medium">Scale your capacity without scaling your stress</p>
+                  </div>
+
+                  <div class="bg-white rounded-lg p-4 shadow-md border-l-4 border-accent flex items-start">
+                    <div
+                      class="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center mr-4 flex-shrink-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p class="font-lato text-gray-700 font-medium">Reduce your payroll while increasing output</p>
+                  </div>
+
+                  <div class="bg-white rounded-lg p-4 shadow-md border-l-4 border-primary flex items-start">
+                    <div
+                      class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p class="font-lato text-gray-700 font-medium">Maintain security and compliance standards</p>
+                  </div>
+
+                  <div class="bg-white rounded-lg p-4 shadow-md border-l-4 border-accent flex items-start">
+                    <div
+                      class="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center mr-4 flex-shrink-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p class="font-lato text-gray-700 font-medium">Reclaim your evenings and weekends</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- What You'll Learn Section - Enhanced with modern interactive card design -->
+    <section class="py-16 md:py-24 bg-white" id="learn">
+      <div class="container mx-auto px-6 md:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <span
+            class="inline-block px-4 py-1.5 bg-primary/10 text-primary font-montserrat font-bold rounded-full mb-4 text-sm">
+            THE BLUEPRINT
+          </span>
+          <h2 class="font-montserrat font-bold text-3xl md:text-4xl xl:text-5xl text-dark mb-6">
+            What You'll <span class="text-accent relative inline-block">
+              Learn
+              <div class="absolute -bottom-2 left-0 w-full h-1.5 bg-accent rounded-full"></div>
+            </span>
+          </h2>
+          <p class="font-lato text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+            In just 60 minutes, you'll walk away with actionable strategies to transform your firm.
+          </p>
+        </div>
+
+        <!-- Modern interactive cards with hover effects -->
+        <div class="max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Card 1 -->
+            <div
+              class="group relative bg-white rounded-2xl shadow-soft p-6 md:p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 overflow-hidden"
+              data-aos="fade-up" data-aos-delay="100">
+              <!-- Background pattern -->
+              <div
+                class="absolute right-0 bottom-0 w-32 h-32 bg-primary/5 rounded-full -mr-10 -mb-10 group-hover:scale-150 transition-transform duration-500">
+              </div>
+
+              <div class="relative z-10">
+                <!-- Icon -->
+                <div
+                  class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                </div>
+
+                <!-- Content -->
+                <span
+                  class="inline-block px-3 py-1 bg-primary/5 text-primary text-xs font-bold rounded-full mb-3">01</span>
+                <h3
+                  class="font-montserrat font-bold text-xl mb-3 text-dark group-hover:text-primary transition-colors duration-300">
+                  Outsourcing Myths Debunked</h3>
+                <p class="font-lato text-gray-600 mb-4 leading-relaxed">
+                  The three biggest myths about outsourcing and why they're holding you back from scaling your firm.
+                </p>
+
+                <!-- Feature bullets -->
+                <ul class="space-y-2 mb-4">
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-accent mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-sm text-gray-600">Why "keeping it local" costs more</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-accent mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-sm text-gray-600">The truth about offshore talent quality</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="group relative bg-white rounded-2xl shadow-soft p-6 md:p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 overflow-hidden"
+              data-aos="fade-up" data-aos-delay="200">
+              <!-- Background pattern -->
+              <div
+                class="absolute right-0 bottom-0 w-32 h-32 bg-accent/5 rounded-full -mr-10 -mb-10 group-hover:scale-150 transition-transform duration-500">
+              </div>
+
+              <div class="relative z-10">
+                <!-- Icon -->
+                <div
+                  class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-accent" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                  </svg>
+                </div>
+
+                <!-- Content -->
+                <span
+                  class="inline-block px-3 py-1 bg-accent/5 text-accent text-xs font-bold rounded-full mb-3">02</span>
+                <h3
+                  class="font-montserrat font-bold text-xl mb-3 text-dark group-hover:text-accent transition-colors duration-300">
+                  The Offshore System</h3>
+                <p class="font-lato text-gray-600 mb-4 leading-relaxed">
+                  The exact system we use to scale with offshore talent, including setup, training, and management.
+                </p>
+
+                <!-- Feature bullets -->
+                <ul class="space-y-2 mb-4">
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-accent mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-sm text-gray-600">Our proven 3-step hiring framework</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-accent mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-sm text-gray-600">Plug-and-play management system</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="group relative bg-white rounded-2xl shadow-soft p-6 md:p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 overflow-hidden"
+              data-aos="fade-up" data-aos-delay="300">
+              <!-- Background pattern -->
+              <div
+                class="absolute right-0 bottom-0 w-32 h-32 bg-secondary/5 rounded-full -mr-10 -mb-10 group-hover:scale-150 transition-transform duration-500">
+              </div>
+
+              <div class="relative z-10">
+                <!-- Icon -->
+                <div
+                  class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-secondary/20 transition-colors duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-secondary" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                  </svg>
+                </div>
+
+                <!-- Content -->
+                <span
+                  class="inline-block px-3 py-1 bg-secondary/5 text-secondary text-xs font-bold rounded-full mb-3">03</span>
+                <h3
+                  class="font-montserrat font-bold text-xl mb-3 text-dark group-hover:text-secondary transition-colors duration-300">
+                  Security & Compliance</h3>
+                <p class="font-lato text-gray-600 mb-4 leading-relaxed">
+                  How to protect your firm's security and compliance while working with offshore teams.
+                </p>
+
+                <!-- Feature bullets -->
+                <ul class="space-y-2 mb-4">
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-secondary mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-sm text-gray-600">Our 5-point security protocol</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-secondary mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-sm text-gray-600">Compliant workflow templates</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div
+              class="group relative bg-white rounded-2xl shadow-soft p-6 md:p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 overflow-hidden"
+              data-aos="fade-up" data-aos-delay="400">
+              <!-- Background pattern -->
+              <div
+                class="absolute right-0 bottom-0 w-32 h-32 bg-primary/5 rounded-full -mr-10 -mb-10 group-hover:scale-150 transition-transform duration-500">
+              </div>
+
+              <div class="relative z-10">
+                <!-- Icon -->
+                <div
+                  class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+
+                <!-- Content -->
+                <span
+                  class="inline-block px-3 py-1 bg-primary/5 text-primary text-xs font-bold rounded-full mb-3">04</span>
+                <h3
+                  class="font-montserrat font-bold text-xl mb-3 text-dark group-hover:text-primary transition-colors duration-300">
+                  Client Scaling Strategy</h3>
+                <p class="font-lato text-gray-600 mb-4 leading-relaxed">
+                  How to serve more clients without adding to your payroll or working more hours with our proven scaling
+                  model.
+                </p>
+
+                <!-- Feature bullets -->
+                <ul class="space-y-2 mb-4">
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-primary mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-sm text-gray-600">Client capacity planning model</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-5 w-5 text-primary mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-sm text-gray-600">Team structure optimization</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <span class="font-lato text-gray-700">The 3x client capacity method</span>
+          </li>
+          <li class="flex items-start">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-accent flex-shrink-0 mt-1" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="font-lato text-gray-700">Integrating offshore & local teams</span>
+          </li>
+          </ul>
+        </div>
+      </div>
+      </div>
+      </div>
+
+      <!-- Learn Item Row 3 -->
+      <div class="grid md:grid-cols-2 gap-8 md:gap-16 relative">
+        <!-- Learn Item 5 -->
+        <div
+          class="bg-white rounded-2xl shadow-lg p-8 border-t-4 border-accent transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+          data-aos="fade-right">
+          <div
+            class="absolute top-8 left-1/2 hidden lg:flex items-center justify-center transform -translate-x-1/2 z-10">
+            <div class="w-12 h-12 rounded-full bg-white p-1">
+              <div
+                class="w-full h-full rounded-full bg-primary text-white flex items-center justify-center font-montserrat font-bold">
+                3
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <div class="w-16 h-16 rounded-2xl bg-secondary/20 flex items-center justify-center mr-6 flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+
+            <div>
+              <span
+                class="text-sm font-lato text-primary/70 font-semibold uppercase tracking-wider">Implementation</span>
+              <h3 class="font-montserrat font-bold text-xl mb-3 text-primary">Quick Start Blueprint</h3>
+              <p class="font-lato text-gray-600 mb-4">
+                How to get started this month with a proven plug-and-play model that works immediately.
+              </p>
+              <ul class="space-y-2">
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-accent flex-shrink-0 mt-1"
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="font-lato text-gray-700">30-day implementation roadmap</span>
+                </li>
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-accent flex-shrink-0 mt-1"
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="font-lato text-gray-700">Critical first tasks to delegate</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Learn Item 6 -->
+        <div
+          class="bg-white rounded-2xl shadow-lg p-8 border-t-4 border-secondary transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+          data-aos="fade-left">
+          <div class="flex items-start">
+            <div class="w-16 h-16 rounded-2xl bg-accent/20 flex items-center justify-center mr-6 flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+
+            <div>
+              <span
+                class="text-sm font-lato text-primary/70 font-semibold uppercase tracking-wider">Profitability</span>
+              <h3 class="font-montserrat font-bold text-xl mb-3 text-primary">Profit Maximization</h3>
+              <p class="font-lato text-gray-600 mb-4">
+                How to increase margin and profitability while reducing your personal workload.
+              </p>
+              <ul class="space-y-2">
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-accent flex-shrink-0 mt-1"
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="font-lato text-gray-700">Pricing strategies that work with offshore teams</span>
+                </li>
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-accent flex-shrink-0 mt-1"
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="font-lato text-gray-700">How to double your profit margins</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Item 5 -->
+        <div class="flex flex-col md:flex-row items-center" data-aos="fade-up">
+          <div class="md:w-1/2 md:pr-12 mb-8 md:mb-0 text-center md:text-right">
+            <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent inline-block">
+              <span class="text-sm text-accent font-bold mb-2 block">05</span>
+              <h3 class="text-xl font-bold mb-3 text-dark">Profit Maximization</h3>
+              <p class="text-gray-600 mb-4">How to increase margin and profitability while reducing your personal
+                workload.</p>
+            </div>
+          </div>
+
+          <!-- Timeline dot -->
+          <div
+            class="md:absolute md:left-1/2 md:transform md:-translate-x-1/2 z-10 w-12 h-12 rounded-full bg-white border-4 border-accent flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+
+          <div class="md:w-1/2 md:pl-12 text-center md:text-left">
+            <div class="md:hidden mb-8 text-gray-500">
+              <p>Pricing strategies that work with offshore teams and how to double your profit margins.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Register button at bottom of timeline -->
+      <div class="flex justify-center mt-16" data-aos="fade-up">
+        <a href="#register"
+          class="inline-flex items-center justify-center bg-primary hover:bg-accent text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+          <span>Reserve Your Spot Now</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </a>
+      </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Why Now Is The Time Section - New section added -->
+    <section class="py-16 md:py-24 bg-primary text-white" id="why-now">
+      <div class="container mx-auto px-6 md:px-8">
+        <div class="flex flex-col lg:flex-row items-center">
+          <!-- Left side with statistics -->
+          <div class="w-full lg:w-1/2 mb-12 lg:mb-0" data-aos="fade-right">
+            <span
+              class="inline-block px-4 py-1.5 bg-white/10 text-white font-montserrat font-bold rounded-full mb-4 text-sm">
+              MARKET OPPORTUNITY
+            </span>
+            <h2 class="font-montserrat font-bold text-3xl md:text-4xl xl:text-5xl mb-8">
+              Why <span class="text-accent relative inline-block">
+                Now
+                <div class="absolute -bottom-2 left-0 w-0 h-1.5 bg-accent rounded-full heading-underline"></div>
+              </span> Is The Time
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-10">
+              <!-- Stat 1 -->
+              <div
+                class="bg-white/5 backdrop-blur-sm p-6 rounded-xl transform transition-all hover:-translate-y-1 hover:shadow-lg">
+                <div class="flex items-baseline mb-2">
+                  <span class="text-4xl font-montserrat font-bold text-accent">
+                    <span class="stat-counter" data-target="33">0</span>M+
+                  </span>
+                </div>
+                <p class="font-lato text-white/80">Small businesses in the U.S. needing accounting services</p>
+              </div>
+
+              <!-- Stat 2 -->
+              <div
+                class="bg-white/5 backdrop-blur-sm p-6 rounded-xl transform transition-all hover:-translate-y-1 hover:shadow-lg">
+                <div class="flex items-baseline mb-2">
+                  <span class="text-4xl font-montserrat font-bold text-accent">
+                    <span class="stat-counter" data-target="60">0</span>%
+                  </span>
+                </div>
+                <p class="font-lato text-white/80">Have no bookkeeper or accountant managing their finances</p>
+              </div>
+
+              <!-- Stat 3 -->
+              <div
+                class="bg-white/5 backdrop-blur-sm p-6 rounded-xl transform transition-all hover:-translate-y-1 hover:shadow-lg">
+                <div class="flex items-baseline mb-2">
+                  <span class="text-4xl font-montserrat font-bold text-accent">$<span class="stat-counter"
+                      data-target="735">0</span>B+</span>
+                </div>
+                <p class="font-lato text-white/80">Global accounting market size and growing</p>
+              </div>
+
+              <!-- Stat 4 -->
+              <div
+                class="bg-white/5 backdrop-blur-sm p-6 rounded-xl transform transition-all hover:-translate-y-1 hover:shadow-lg">
+                <div class="flex items-baseline mb-2">
+                  <span class="text-3xl font-montserrat font-bold text-accent">Top Firms</span>
+                </div>
+                <p class="font-lato text-white/80">Like Deloitte & Intuit already leverage offshore teams</p>
+              </div>
+            </div>
+
+            <p class="font-lato text-lg text-white/90">
+              Remote work + automation = <span class="font-semibold text-accent">major opportunity</span> for nimble
+              accounting firms ready to scale.
+            </p>
+          </div>
+
+          <!-- Right side with image/visualization -->
+          <div class="w-full lg:w-1/2 lg:pl-16" data-aos="fade-left" data-aos-delay="200">
+            <div class="relative">
+              <!-- Main image container -->
+              <div class="rounded-2xl overflow-hidden bg-white/10 backdrop-blur-md p-1.5">
+                <div class="rounded-xl bg-secondary/10 aspect-video relative overflow-hidden">
+                  <!-- Replace with actual image -->
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="text-center">
+                      <p class="font-montserrat font-bold text-2xl mb-3">The Perfect Timing</p>
+                      <p class="font-lato text-white/80 mx-8">Remote work revolution meets accounting talent shortage
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quote overlay -->
+              <div
+                class="absolute -bottom-10 -right-10 md:bottom-8 md:right-8 bg-accent text-primary p-6 rounded-xl shadow-lg max-w-xs transform rotate-3 z-20"
+                data-aos="fade-up" data-aos-delay="400">
+                <svg class="h-10 w-10 text-primary/20 mb-4" fill="currentColor" viewBox="0 0 32 32">
+                  <path
+                    d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                </svg>
+                <p class="font-lato italic mb-4">
+                  "The firms that adopt offshore talent now will have an insurmountable advantage within 3 years."
+                </p>
+                <p class="font-montserrat font-bold">Top Industry Analyst</p>
+              </div>
+
+              <!-- Decorative elements -->
+              <div class="absolute -top-6 -left-6 w-24 h-24 bg-secondary/30 rounded-full blur-md -z-10"></div>
+              <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-accent/30 rounded-full blur-md -z-10"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who This Is For Section - Modern UI with clean design -->
+    <section class="py-24 bg-softGray relative overflow-hidden" id="audience">
+      <div class="container mx-auto px-6 md:px-8 relative z-10">
+        <!-- Background elements -->
+        <div
+          class="absolute top-0 right-0 w-[600px] h-[600px] bg-accent/5 rounded-full -translate-y-1/2 translate-x-1/3 blur-3xl">
+        </div>
+        <div
+          class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-primary/5 rounded-full translate-y-1/3 -translate-x-1/3 blur-3xl">
+        </div>
+
+        <div class="text-center mb-16" data-aos="fade-up">
+          <span
+            class="inline-block px-4 py-1.5 bg-primary/10 text-primary font-montserrat font-semibold rounded-md mb-4 text-sm">
+            GETTING STARTED WITH US IS EASY
+          </span>
+          <h2 class="font-montserrat font-bold text-3xl md:text-4xl xl:text-5xl text-primary mb-6">
+            Who This Is <span class="text-primary relative inline-block">
+              For
+              <div class="absolute -bottom-2 left-0 w-full h-1 bg-accent rounded-full"></div>
+            </span>
+          </h2>
+          <p class="font-lato text-lg text-gray-600 max-w-2xl mx-auto">
+            This webinar is designed specifically for accounting professionals who are ready to scale their practice.
+          </p>
+        </div>
+
+        <!-- Modern card layout with visual distinction -->
+        <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <!-- Perfect For - Modern card -->
+          <div
+            class="bg-white rounded-xl shadow-soft overflow-hidden flex flex-col h-full transform transition-all duration-300 hover:shadow-soft-lg hover:-translate-y-1"
+            data-aos="fade-right">
+            <!-- Card header -->
+            <div class="bg-softBlue p-6">
+              <div class="flex items-center">
+                <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                </div>
+                <h3 class="font-montserrat font-bold text-xl text-primary">This webinar is perfect for:</h3>
+              </div>
+            </div>
+
+            <div class="p-8">
+              <ul class="space-y-4">
+                <li
+                  class="flex items-center p-4 bg-white rounded-lg border border-gray-100 transition-all hover:border-primary/20 hover:bg-softBlue/20">
+                  <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span class="font-lato text-gray-700">Firm owners who are ready to grow but are stretched too
+                    thin</span>
+                </li>
+
+                <li
+                  class="flex items-center p-4 bg-white rounded-lg border border-gray-100 transition-all hover:border-primary/20 hover:bg-softBlue/20">
+                  <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span class="font-lato text-gray-700">Accounting professionals tired of solutions that don't
+                    scale</span>
+                </li>
+
+                <li
+                  class="flex items-center p-4 bg-white rounded-lg border border-gray-100 transition-all hover:border-primary/20 hover:bg-softBlue/20">
+                  <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span class="font-lato text-gray-700">Firms that want to increase profit without increasing
+                    stress</span>
+                </li>
+
+                <li
+                  class="flex items-center p-4 bg-white rounded-lg border border-gray-100 transition-all hover:border-primary/20 hover:bg-softBlue/20">
+                  <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span class="font-lato text-gray-700">Solo practitioners looking to expand their capacity</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Not For - Modern card -->
+          <div
+            class="bg-white rounded-xl shadow-soft overflow-hidden flex flex-col h-full transform transition-all duration-300 hover:shadow-soft-lg hover:-translate-y-1"
+            data-aos="fade-left" data-aos-delay="200">
+            <!-- Card header -->
+            <div class="bg-softGreen p-6">
+              <div class="flex items-center">
+                <div class="w-10 h-10 rounded-lg bg-accent/20 flex items-center justify-center mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+                  </svg>
+                </div>
+                <h3 class="font-montserrat font-bold text-xl text-primary">This webinar is NOT for:</h3>
+              </div>
+            </div>
+
+            <ul class="space-y-6">
+              <li class="flex items-center p-3 bg-white/70 rounded-lg transition-all hover:shadow-md">
+                <div class="w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center mr-4 flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </div>
+                <span class="font-lato text-gray-700">Firm owners looking for a quick hack, one-time fix, or passive
+                  income gimmick</span>
+              </li>
+
+              <li class="flex items-center p-3 bg-white/70 rounded-lg transition-all hover:shadow-md">
+                <div class="w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center mr-4 flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </div>
+                <span class="font-lato text-gray-700">Accounting professionals comfortable with the status quo</span>
+              </li>
+
+              <li class="flex items-center p-3 bg-white/70 rounded-lg transition-all hover:shadow-md">
+                <div class="w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center mr-4 flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </div>
+                <span class="font-lato text-gray-700">Firms insisting on doing everything themselves, even at the cost
+                  of growth</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to action below the two columns -->
+      <div class="text-center mt-16" data-aos="fade-up">
+        <p class="font-montserrat font-bold text-xl text-primary mb-6">
+          👉 If you're ready to work smarter, not harder, this is for you.
+        </p>
+        <a href="#register"
+          class="btn-gradient text-white font-montserrat font-bold py-3 px-8 rounded-full inline-block hover:shadow-lg transition-all">
+          Save My Seat
+        </a>
+      </div>
+      </div>
+    </section>
+
+    <!-- Meet Your Host with dark blue background like reference -->
+    <section class="py-16 md:py-24 bg-primary text-white" id="instructors">
+      <div class="container mx-auto px-6 md:px-8">
+        <div class="text-left mb-12" data-aos="fade-up">
+          <span
+            class="inline-block px-4 py-1.5 bg-white/10 text-white font-montserrat font-bold rounded-md mb-4 text-sm">
+            MEET YOUR HOST
+          </span>
+          <h2 class="font-montserrat font-bold text-3xl md:text-4xl text-white mb-4">Ibrahim Mohammed</h2>
+          <p class="font-lato text-lg text-white/80 max-w-2xl">
+            Founder & CEO of Account Ability Network
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-12">
+          <!-- Instructor 1 -->
+          <div class="flex flex-col items-center" data-aos="fade-right">
+            <!-- Image placeholder -->
+            <div class="w-48 h-48 rounded-full bg-neutral mb-6 overflow-hidden">
+              <!-- Replace with actual image -->
+              <div class="w-full h-full bg-secondary/30 flex items-center justify-center">
+                <span class="font-montserrat font-bold text-primary">Steve Lott</span>
+              </div>
+            </div>
+            <h3 class="font-montserrat font-bold text-2xl mb-2 text-primary">Steve Lott</h3>
+            <p class="font-lato text-gray-500 mb-4">Founder, Account Ability Network</p>
+            <p class="font-lato text-gray-600 text-center max-w-md">
+              Steve was burnt out, overworked, and trying to scale alone — until he made one shift: he stopped doing
+              everything himself and built a world-class offshore team.
+            </p>
+          </div>
+
+          <!-- Instructor 2 -->
+          <div class="flex flex-col items-center" data-aos="fade-left" data-aos-delay="200">
+            <!-- Image placeholder -->
+            <div class="w-48 h-48 rounded-full bg-neutral mb-6 overflow-hidden">
+              <!-- Replace with actual image -->
+              <div class="w-full h-full bg-secondary/30 flex items-center justify-center">
+                <span class="font-montserrat font-bold text-primary">Ibrahim Mohammed</span>
+              </div>
+            </div>
+            <h3 class="font-montserrat font-bold text-2xl mb-2 text-primary">Ibrahim Mohammed</h3>
+            <p class="font-lato text-gray-500 mb-4">Co-Founder, Account Ability Network</p>
+            <p class="font-lato text-gray-600 text-center max-w-md">
+              Ibrahim invested in systems, not just software, and partnered with a world-class offshore team — and it
+              changed everything for his business.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section with modern card design inspired by reference image -->
+    <section class="py-16 md:py-24 bg-gradient-to-b from-white to-gray-50" id="results">
+      <div class="container mx-auto px-6 md:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <span
+            class="inline-block px-4 py-1.5 bg-secondary/10 text-secondary font-montserrat font-bold rounded-full mb-4 text-sm">
+            SUCCESS STORIES
+          </span>
+          <h2 class="font-montserrat font-bold text-3xl md:text-4xl xl:text-5xl text-dark mb-6">
+            Here's what others are <span class="text-secondary relative inline-block">
+              saying
+              <div class="absolute -bottom-2 left-0 w-full h-1.5 bg-secondary rounded-full"></div>
+            </span>
+          </h2>
+          <p class="font-lato text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+            Join hundreds of accounting professionals who have already transformed their firms.
+          </p>
+        </div> <!-- Testimonials Carousel-style Grid -->
+        <div class="max-w-6xl mx-auto">
+          <!-- Large featured testimonial -->
+          <div class="mb-12 rounded-2xl shadow-soft overflow-hidden" data-aos="fade-up">
+            <div class="bg-white p-0">
+              <div class="flex flex-col md:flex-row">
+                <!-- Image side -->
+                <div class="md:w-5/12 lg:w-1/3 relative">
+                  <div class="absolute inset-0 bg-primary/10"></div>
+                  <div class="h-64 md:h-full relative">
+                    <img
+                      src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                      alt="Success story" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/50 to-transparent flex items-end p-6">
+                      <div class="text-white">
+                        <p class="font-montserrat font-bold text-lg">Jessica Williams</p>
+                        <p class="font-lato text-sm text-white/90">Tax Consultant</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Content side -->
+                <div class="md:w-7/12 lg:w-2/3 p-8 md:p-12 flex flex-col justify-center relative">
+                  <!-- Quote icon -->
+                  <div class="absolute top-6 right-6">
+                    <svg class="h-20 w-20 text-gray-100" fill="currentColor" viewBox="0 0 32 32">
+                      <path
+                        d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                    </svg>
+                  </div>
+
+                  <div class="text-primary font-bold text-lg mb-2">Transformed My Practice</div>
+                  <p class="font-lato text-gray-700 text-lg md:text-xl italic mb-8 leading-relaxed relative z-10">
+                    "I cannot say enough good things about this webinar. The strategies shared here completely
+                    transformed how I run my accounting firm. I've implemented the offshore system and it's like having
+                    a whole new team without the overhead."
+                  </p>
+
+                  <!-- Results -->
+                  <div class="flex flex-wrap gap-4 md:gap-8">
+                    <div class="bg-primary/5 px-4 py-3 rounded-lg">
+                      <p class="font-montserrat font-bold text-xl text-primary">35%</p>
+                      <p class="font-lato text-xs text-gray-500">More Clients</p>
+                    </div>
+                    <div class="bg-accent/5 px-4 py-3 rounded-lg">
+                      <p class="font-montserrat font-bold text-xl text-accent">40%</p>
+                      <p class="font-lato text-xs text-gray-500">Cost Reduction</p>
+                    </div>
+                    <div class="bg-secondary/5 px-4 py-3 rounded-lg">
+                      <p class="font-montserrat font-bold text-xl text-secondary">20+</p>
+                      <p class="font-lato text-xs text-gray-500">Hours Saved/Week</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial Cards Grid -->
+          <div class="grid md:grid-cols-3 gap-6 mb-12">
+            <!-- Testimonial Card 1 -->
+
+            <!-- Testimonial Card 1 -->
+            <div
+              class="bg-white rounded-xl shadow-soft p-6 md:p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+              data-aos="fade-up" data-aos-delay="100">
+              <!-- Rating stars -->
+              <div class="flex mb-4">
+                <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+                <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+                <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+                <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+                <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+              </div>
+
+              <!-- Quote -->
+              <blockquote class="relative">
+                <svg class="absolute top-0 left-0 transform -translate-x-6 -translate-y-8 h-16 w-16 text-gray-100 z-0"
+                  fill="currentColor" viewBox="0 0 32 32">
+                  <path
+                    d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                </svg>
+                <p class="font-lato text-gray-600 italic text-base mb-8 relative z-10">
+                  "Worth every minute. I was able to implement the offshore systems right away and have already seen
+                  dramatic results in my workflow."
+                </p>
+              </blockquote>
+
+              <!-- Avatar and Name -->
+              <div class="flex items-center">
+                <div class="w-12 h-12 rounded-full bg-primary/10 flex-shrink-0 mr-4 flex items-center justify-center">
+                  <span class="font-bold text-primary">RM</span>
+                </div>
+                <div>
+                  <p class="font-montserrat font-bold text-sm text-dark">Robert Martinez</p>
+                  <p class="font-lato text-gray-500 text-xs">Accounting Firm Owner</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial Card 2 -->
+
+            <!-- Testimonial Card 2 -->
+            <div
+              class="bg-white rounded-xl shadow-soft p-6 md:p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+              data-aos="fade-up" data-aos-delay="200">
+              <!-- Rating stars -->
+              <div class="flex mb-4">
+                <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+                <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+                <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+                <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+                <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+              </div>
+
+              <!-- Quote -->
+              <blockquote class="relative">
+                <svg class="absolute top-0 left-0 transform -translate-x-6 -translate-y-8 h-16 w-16 text-gray-100 z-0"
+                  fill="currentColor" viewBox="0 0 32 32">
+                  <path
+                    d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                </svg>
+                <p class="font-lato text-gray-600 italic text-base mb-8 relative z-10">
+                  "I was skeptical about outsourcing, but the security protocols shared in this webinar gave me
+                  confidence. My team is now more efficient than ever."
+                </p>
+              </blockquote>
+
+              <!-- Avatar and Name -->
+              <div class="flex items-center">
+                <div class="w-12 h-12 rounded-full bg-accent/10 flex-shrink-0 mr-4 flex items-center justify-center">
+                  <span class="font-bold text-accent">MT</span>
+                </div>
+                <div>
+                  <p class="font-montserrat font-bold text-sm text-dark">Michael Thompson</p>
+                  <p class="font-lato text-gray-500 text-xs">Financial Advisor</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial Card 3 -->
+            <div
+              class="bg-white rounded-xl shadow-soft p-6 md:p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+              data-aos="fade-up" data-aos-delay="300">
+              <!-- Rating stars -->
+              <div class="flex mb-4">
+                <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+                <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+                <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+                <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+                <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+              </div>
+
+              <!-- Quote -->
+              <blockquote class="relative">
+                <svg class="absolute top-0 left-0 transform -translate-x-6 -translate-y-8 h-16 w-16 text-gray-100 z-0"
+                  fill="currentColor" viewBox="0 0 32 32">
+                  <path
+                    d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                </svg>
+                <p class="font-lato text-gray-600 italic text-base mb-8 relative z-10">
+                  "I was struggling with scaling my firm, now I'm handling 3x more clients with half the stress. This
+                  webinar is gold!"
+                </p>
+              </blockquote>
+
+              <!-- Avatar and Name -->
+              <div class="flex items-center">
+                <div class="w-12 h-12 rounded-full bg-secondary/10 flex-shrink-0 mr-4 flex items-center justify-center">
+                  <span class="font-bold text-secondary">AP</span>
+                </div>
+                <div>
+                  <p class="font-montserrat font-bold text-sm text-dark">Amanda Peterson</p>
+                  <p class="font-lato text-gray-500 text-xs">CPA, Peterson Accounting</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Register button -->
+          <div class="text-center" data-aos="fade-up">
+            <a href="#register"
+              class="inline-block bg-primary hover:bg-accent text-white font-montserrat font-bold py-4 px-12 rounded-xl transition-all duration-300 hover:shadow-lg hover:-translate-y-1 transform">
+              <span class="flex items-center">
+                <span>Register Now</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </span>
+            </a>
+            <p class="mt-4 text-gray-500 text-sm">Join 500+ accounting professionals who've already attended</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration Section with countdown timer like reference -->
+    <section class="py-16 md:py-24 bg-white text-dark" id="register">
+      <div class="container mx-auto px-6 md:px-8 relative z-10">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-12" data-aos="fade-up">
+            <h2 class="font-montserrat font-bold text-3xl md:text-4xl mb-6 text-dark">
+              WEBINAR IS ON 24 JUNE DON'T MISS OUT
+            </h2>
+            <p class="font-lato text-lg text-gray-600 max-w-3xl mx-auto mb-10">
+              Spaces are limited for this exclusive webinar. Register now to secure your seat.
+            </p>
+
+            <!-- Countdown Timer like reference -->
+            <div class="flex justify-center items-center space-x-6 mb-8">
+              <!-- Days -->
+              <div class="text-center">
+                <div class="text-4xl font-montserrat font-bold text-primary mb-2">00</div>
+                <div class="text-sm font-lato text-gray-600">Days</div>
+              </div>
+
+              <!-- Hours -->
+              <div class="text-center">
+                <div class="text-4xl font-montserrat font-bold text-primary mb-2">00</div>
+                <div class="text-sm font-lato text-gray-600">Hours</div>
+              </div>
+
+              <!-- Minutes -->
+              <div class="text-center">
+                <div class="text-4xl font-montserrat font-bold text-primary mb-2">00</div>
+                <div class="text-sm font-lato text-gray-600">Minutes</div>
+              </div>
+
+              <!-- Seconds -->
+              <div class="text-center">
+                <div class="text-4xl font-montserrat font-bold text-primary mb-2">00</div>
+                <div class="text-sm font-lato text-gray-600">Seconds</div>
+              </div>
+            </div>
+
+            <!-- Progress bar like reference -->
+            <div class="w-full h-2 bg-gray-200 rounded-full mb-6 overflow-hidden">
+              <div class="h-full w-3/4 bg-primary rounded-full"></div>
+            </div>
+
+            <!-- Register button -->
+            <a href="#register-form"
+              class="inline-block bg-primary hover:bg-accent text-white font-montserrat font-bold py-3 px-10 rounded-md transition-all hover:shadow-lg">
+              Reserve My Seat Now
+            </a>
+          </div>
+
+        </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="bg-primary text-white py-12">
+    <div class="container mx-auto px-6 md:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-8 md:mb-0">
+          <div class="font-montserrat font-bold text-2xl mb-2">Account Ability</div>
+          <p class="font-lato text-neutral/80">Scaling firms smarter with outsourcing solutions.</p>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-8 items-center">
+          <a href="#" class="font-lato text-neutral/80 hover:text-white transition-colors">Privacy Policy</a>
+          <a href="#" class="font-lato text-neutral/80 hover:text-white transition-colors">Terms of Service</a>
+          <a href="#" class="font-lato text-neutral/80 hover:text-white transition-colors">Contact Us</a>
+        </div>
+      </div>
+
+      <div class="border-t border-white/20 mt-8 pt-8 text-center">
+        <p class="font-lato text-neutral/60">© 2025 Account Ability. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button id="backToTop"
+    class="fixed bottom-6 right-6 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
+
+  <!-- AOS Animation JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <!-- Custom JS with enhanced animations -->
+  <script>
+    // Initialize AOS animations with refined settings
+    AOS.init({
+      duration: 800,
+      once: false,
+      offset: 100,
+      delay: 100,
+      easing: 'ease-in-out',
+      mirror: true
+    });
+
+    // GSAP animations for enhanced visual effects
+    document.addEventListener('DOMContentLoaded', () => {
+      // Register ScrollTrigger plugin
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Check for mobile devices and adapt animations
+      const isMobile = window.innerWidth < 768;
+
+      // Configure animation settings based on device type
+      if (isMobile) {
+        // Lighter animations for mobile to improve performance
+        gsap.defaults({
+          duration: 0.5,
+          ease: "power1.out"
+        });
+
+        // Disable parallax effects on mobile for better performance
+        document.querySelectorAll('.parallax-bg').forEach(element => {
+          element.classList.remove('parallax-bg');
+        });
+
+        // Set AOS to run only once on mobile for better performance
+        AOS.init({
+          duration: 600,
+          once: true,
+          offset: 50
+        });
+      }
+
+      // Animate hero section elements with staggered effect
+      gsap.from('.hero-element', {
+        opacity: 0,
+        y: 30,
+        stagger: 0.2,
+        duration: 1,
+        ease: "power3.out",
+      });
+
+      // Animate statistic counters
+      gsap.utils.toArray('.stat-counter').forEach(counter => {
+        const target = parseFloat(counter.getAttribute('data-target'));
+
+        ScrollTrigger.create({
+          trigger: counter,
+          start: "top 80%",
+          onEnter: () => {
+            gsap.to(counter, {
+              innerHTML: target,
+              duration: 2,
+              snap: { innerHTML: 1 },
+              ease: "power2.out"
+            });
+          },
+          once: true
+        });
+      });
+
+      // Parallax effect for background elements
+      gsap.utils.toArray('.parallax-bg').forEach(element => {
+        gsap.to(element, {
+          y: () => element.getAttribute('data-speed') * (ScrollTrigger.maxScroll(window) - ScrollTrigger.scrollTop()),
+          ease: "none",
+          scrollTrigger: {
+            start: 0,
+            end: "max",
+            invalidateOnRefresh: true,
+            scrub: true
+          }
+        });
+      });
+
+      // Animate section headings with underline effect
+      ScrollTrigger.batch('.heading-underline', {
+        start: "top 80%",
+        onEnter: batch => {
+          gsap.to(batch, {
+            width: "100%",
+            duration: 1.2,
+            ease: "power2.out",
+            stagger: 0.2
+          });
+        },
+        once: true
+      });
+
+      // Timeline animation for the "What You'll Learn" section
+      const timelineSection = document.getElementById('learn');
+      const timelineProgress = document.getElementById('timeline-progress');
+
+      if (timelineSection && timelineProgress) {
+        ScrollTrigger.create({
+          trigger: timelineSection,
+          start: 'top 80%',
+          end: 'bottom 20%',
+          onUpdate: (self) => {
+            gsap.to(timelineProgress, {
+              height: `${self.progress * 100}%`,
+              duration: 0.1,
+              ease: 'none'
+            });
+          }
+        });
+      }
+
+      // Animated circles on timeline
+      gsap.utils.toArray('.what-you-learn-item').forEach((item, index) => {
+        const circle = item.querySelector('.timeline-circle');
+        if (circle) {
+          ScrollTrigger.create({
+            trigger: item,
+            start: 'top 70%',
+            onEnter: () => {
+              gsap.fromTo(circle,
+                { scale: 0, opacity: 0 },
+                {
+                  scale: 1,
+                  opacity: 1,
+                  duration: 0.6,
+                  ease: "back.out(1.7)",
+                  delay: index * 0.1
+                }
+              );
+            },
+            once: true
+          });
+        }
+      });
+    });
+
+    // Back to top button functionality with enhanced animation
+    const backToTopBtn = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        gsap.to(backToTopBtn, {
+          opacity: 1,
+          visibility: 'visible',
+          duration: 0.3,
+          ease: 'power2.out'
+        });
+      } else {
+        gsap.to(backToTopBtn, {
+          opacity: 0,
+          visibility: 'hidden',
+          duration: 0.3,
+          ease: 'power2.out'
+        });
+      }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+      gsap.to(window, {
+        scrollTo: 0,
+        duration: 1.5,
+        ease: "power4.out"
+      });
+    });
+
+    // Enhanced smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+          gsap.to(window, {
+            duration: 1,
+            scrollTo: {
+              y: targetElement,
+              offsetY: 80
+            },
+            ease: "power3.inOut"
+          });
+        }
+      });
+    });
+
+    // Form validation and enhanced interaction with animations
+    const form = document.querySelector('form');
+    if (form) {
+      const formInputs = form.querySelectorAll('input, select');
+
+      // Initial animation for form fields
+      gsap.from(formInputs, {
+        y: 20,
+        opacity: 0,
+        stagger: 0.1,
+        duration: 0.5,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: form,
+          start: "top 80%"
+        }
+      });
+
+      // Add focus effects to form inputs with animation
+      formInputs.forEach(input => {
+        input.addEventListener('focus', () => {
+          // Add ring style
+          input.parentElement.classList.add('ring-2', 'ring-accent', 'ring-opacity-50');
+
+          // Scale animation on focus
+          gsap.to(input.parentElement, {
+            scale: 1.02,
+            duration: 0.3,
+            ease: "power2.out"
+          });
+        });
+
+        input.addEventListener('blur', () => {
+          // Remove ring style
+          input.parentElement.classList.remove('ring-2', 'ring-accent', 'ring-opacity-50');
+
+          // Return to normal scale
+          gsap.to(input.parentElement, {
+            scale: 1,
+            duration: 0.3,
+            ease: "power2.out"
+          });
+        });
+      });
+
+      // Simple form validation
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        let isValid = true;
+
+        formInputs.forEach(input => {
+          if (input.hasAttribute('required') && !input.value) {
+            isValid = false;
+            input.classList.add('border-red-500');
+
+            // Shake effect on invalid fields
+            gsap.fromTo(input,
+              { x: -10 },
+              { x: 0, duration: 0.5, ease: "elastic.out(1, 0.3)" }
+            );
+
+            // Add error message
+            const errorMsg = document.createElement('p');
+            errorMsg.className = 'text-red-500 text-sm mt-1';
+            errorMsg.textContent = 'This field is required';
+
+            // Remove existing error messages
+            const existingError = input.parentElement.querySelector('.text-red-500');
+            if (existingError) existingError.remove();
+
+            input.parentElement.appendChild(errorMsg);
+          } else {
+            input.classList.remove('border-red-500');
+            const existingError = input.parentElement.querySelector('.text-red-500');
+            if (existingError) existingError.remove();
+          }
+        });
+
+        if (isValid) {
+          // Submit animation
+          const button = form.querySelector('button[type="submit"]');
+          button.innerHTML = 'Processing...';
+
+          gsap.to(button, {
+            backgroundColor: '#002147',
+            color: 'white',
+            duration: 0.3,
+            onComplete: () => {
+              // Replace with actual form submission logic
+              setTimeout(() => {
+                button.innerHTML = 'Registered Successfully!';
+                gsap.to(button, {
+                  backgroundColor: '#A8D5BA',
+                  color: '#002147',
+                  duration: 0.3
+                });
+
+                // Show success message
+                const successMsg = document.createElement('div');
+                successMsg.className = 'bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mt-4';
+                successMsg.innerHTML = '<strong class="font-bold">Success!</strong><span class="block sm:inline"> We\'ve reserved your spot. Check your email for confirmation.</span>';
+                form.appendChild(successMsg);
+
+                // Animate success message
+                gsap.from(successMsg, {
+                  opacity: 0,
+                  y: 20,
+                  duration: 0.5
+                });
+              }, 1500);
+            }
+          });
+        }
+      });
+    }
+
+    // Add loading animation to play button
+    const playButtons = document.querySelectorAll('.play-button');
+    playButtons.forEach(button => {
+      button.addEventListener('mouseover', () => {
+        gsap.to(button, {
+          scale: 1.1,
+          duration: 0.3,
+          ease: "back.out(1.7)"
+        });
+      });
+
+      button.addEventListener('mouseout', () => {
+        gsap.to(button, {
+          scale: 1,
+          duration: 0.3,
+          ease: "power1.out"
+        });
+      });
+
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        // Add video play functionality here
+
+        gsap.to(button, {
+          scale: 0.9,
+          duration: 0.1,
+          yoyo: true,
+          repeat: 1
+        });
+      });
+    });
+
+    // Testimonial section animations
+    const testimonialSection = document.querySelector('#results');
+    if (testimonialSection) {
+      const testimonialCard = testimonialSection.querySelector('.bg-white');
+      const testimonialAvatar = testimonialCard?.querySelector('.rounded-full');
+      const testimonialQuote = testimonialCard?.querySelector('svg');
+
+      if (testimonialCard && testimonialAvatar && testimonialQuote) {
+        // Create floating animation for testimonial card
+        ScrollTrigger.create({
+          trigger: testimonialCard,
+          start: "top 80%",
+          onEnter: () => {
+            // Subtle floating animation for the avatar
+            gsap.to(testimonialAvatar, {
+              y: -5,
+              duration: 2,
+              repeat: -1,
+              yoyo: true,
+              ease: "sine.inOut"
+            });
+
+            // Rotate animation for quote icon
+            gsap.from(testimonialQuote, {
+              rotate: -20,
+              scale: 0,
+              opacity: 0,
+              duration: 1,
+              ease: "back.out(1.7)"
+            });
+
+            // Text reveal animation
+            const testimonialText = testimonialCard.querySelector('p.italic');
+            if (testimonialText) {
+              const text = testimonialText.innerHTML;
+              testimonialText.innerHTML = '';
+
+              const splitText = text.split(' ');
+              splitText.forEach((word, i) => {
+                const span = document.createElement('span');
+                span.innerHTML = word + ' ';
+                span.style.opacity = '0';
+                span.style.display = 'inline-block';
+                testimonialText.appendChild(span);
+
+                gsap.to(span, {
+                  opacity: 1,
+                  delay: 0.5 + (i * 0.03),
+                  duration: 0.2,
+                  ease: "power1.out"
+                });
+              });
+            }
+          },
+          once: true
+        });
+      }
+    }
+
+    // Countdown Timer Functionality
+    function startCountdown() {
+      // Set the date for the webinar (June 24, 2023)
+      const countdownDate = new Date("June 24, 2023 10:00:00").getTime();
+
+      // Update the countdown every second
+      const countdownTimer = setInterval(function () {
+        // Get today's date and time
+        const now = new Date().getTime();
+
+        // Find the distance between now and the countdown date
+        const distance = countdownDate - now;
+
+        // If the countdown is over, show zeros
+        if (distance < 0) {
+          clearInterval(countdownTimer);
+          document.querySelectorAll("#register .text-4xl").forEach(el => {
+            el.innerHTML = "00";
+          });
+          return;
+        }
+
+        // Time calculations for days, hours, minutes and seconds
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result with leading zeros
+        const timeElements = document.querySelectorAll("#register .text-4xl");
+        if (timeElements.length >= 4) {
+          timeElements[0].innerHTML = days.toString().padStart(2, '0');
+          timeElements[1].innerHTML = hours.toString().padStart(2, '0');
+          timeElements[2].innerHTML = minutes.toString().padStart(2, '0');
+          timeElements[3].innerHTML = seconds.toString().padStart(2, '0');
+        }
+
+        // Update progress bar based on time remaining
+        const totalTime = 30 * 24 * 60 * 60 * 1000; // 30 days in milliseconds
+        const elapsed = totalTime - distance;
+        const progressPercent = Math.min(Math.floor((elapsed / totalTime) * 100), 100);
+
+        const progressBar = document.querySelector("#register .bg-primary");
+        if (progressBar) {
+          progressBar.style.width = progressPercent + "%";
+        }
+      }, 1000);
+    }
+
+    // Start the countdown when the page loads
+    document.addEventListener("DOMContentLoaded", function () {
+      startCountdown();
+
+      // Setup for the timeline progress animation
+      const learnSection = document.getElementById('learn');
+      if (learnSection) {
+        // Use ScrollTrigger to animate the timeline progress
+        const timelineItems = learnSection.querySelectorAll('.flex-col.md\\:flex-row');
+
+        if (timelineItems.length > 0) {
+          // Create scroll animations for timeline items
+          timelineItems.forEach((item, index) => {
+            // Add entrance animation
+            gsap.from(item, {
+              opacity: 0,
+              y: 50,
+              scrollTrigger: {
+                trigger: item,
+                start: "top 80%",
+                end: "bottom 70%",
+                toggleActions: "play none none none"
+              },
+              duration: 0.6,
+              delay: index * 0.1
+            });
+          });
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>
