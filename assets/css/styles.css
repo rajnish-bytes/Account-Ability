@@ -318,14 +318,13 @@
 }
 
 /* ====================== SWIPER SLIDER STYLES ====================== */
-/* Enhanced styles for Swiper Cards effect */
+/* Enhanced styles for Swiper slider effect */
 .swiper.testimonialSwiper {
-    perspective: 1200px;
+    overflow: hidden;
 }
 
 .swiper.testimonialSwiper .swiper-slide {
-    transform-style: preserve-3d;
-    transition: transform 0.8s cubic-bezier(0.2, 0.85, 0.4, 1.275);
+    transition: all 0.6s ease;
 }
 
 .swiper.testimonialSwiper .swiper-slide-active {
@@ -334,8 +333,8 @@
 
 .testimonialSwiper .swiper-slide {
     opacity: 0.7;
-    filter: blur(2px);
-    transform: scale(0.9);
+    filter: blur(1px);
+    transform: scale(0.92);
     transition: all 0.5s ease;
 }
 
@@ -343,6 +342,51 @@
     opacity: 1;
     filter: blur(0);
     transform: scale(1);
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); */
+}
+
+/* Custom styles for navigation buttons and pagination */
+.testimonialSwiper .swiper-button-next,
+.testimonialSwiper .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #3B82F6;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.testimonialSwiper .swiper-button-next:hover,
+.testimonialSwiper .swiper-button-prev:hover {
+    background-color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.testimonialSwiper .swiper-button-next::after,
+.testimonialSwiper .swiper-button-prev::after {
+    content: "";
+    font-size: 0;
+}
+
+.testimonialSwiper .swiper-pagination {
+    position: relative;
+    bottom: 0;
+    width: auto;
+}
+
+.testimonialSwiper .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(59, 130, 246, 0.3);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.testimonialSwiper .swiper-pagination-bullet-active {
+    background-color: #3B82F6;
+    transform: scale(1.2);
 }
 
 /* ====================== UTILITY CLASSES ====================== */

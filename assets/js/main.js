@@ -149,42 +149,45 @@ function initTestimonialSlider() {
 
   // Initialize Swiper for testimonials with cards effect
   const testimonialSwiper = new Swiper(".testimonialSwiper", {
-    effect: "cards",
+    effect: "slide", // Changed from cards effect to standard slide
     grabCursor: true,
     loop: true,
+    initialSlide: 0, // Explicitly start with first slide
+    loopedSlides: 1, // Help ensure proper loop behavior
     autoplay: {
       delay: 4000,
       disableOnInteraction: false,
       pauseOnMouseEnter: true
     },
-    cardsEffect: {
-      perSlideOffset: 8,
-      perSlideRotate: 2,
-      rotate: true,
-      slideShadows: true,
-    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    // Enable 3D effects
-    perspective: true,
-    watchSlidesProgress: true,
-    virtualTranslate: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+      dynamicMainBullets: 3
+    },
+    // Fixed direction for correct sliding
+    direction: "horizontal",
+    // Standard slider settings for reliable behavior
+    watchSlidesProgress: false,
+    virtualTranslate: false,
+    speed: 600,
+    slidesPerView: 1,
+    centeredSlides: true,
     on: {
-      progress: function (swiper, progress) {
-        // Add 3D effect during slide transitions
-        for (let i = 0; i < swiper.slides.length; i++) {
-          const slide = swiper.slides[i];
-          const translate = 50 * (i - progress * (swiper.slides.length - 1)) + '%';
-          const opacity = 1 - Math.abs(progress - i / (swiper.slides.length - 1)) * 0.8;
-
-          slide.style.transform = `translateX(${translate})`;
-          slide.style.opacity = opacity;
-        }
-      },
-      init: function () {
+      init: function (swiper) {
         console.log("Swiper testimonials initialized");
+        // Ensure we're showing the first slide
+        setTimeout(() => {
+          swiper.slideTo(0, 0, false);
+        }, 100);
+      },
+      afterInit: function (swiper) {
+        // Double-check proper initialization
+        swiper.slideTo(0, 0, false);
       }
     }
   });
@@ -200,6 +203,14 @@ function initTestimonialSlider() {
       slide.style.opacity = '1';
       slide.style.transform = 'translateY(0)';
     }, 100 + (index * 100));
+  });
+
+  // Ensure starting at first slide after page load
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      testimonialSwiper.slideTo(0, 0);
+      console.log('Forced slide reset to first slide');
+    }, 500);
   });
 
   return testimonialSwiper;

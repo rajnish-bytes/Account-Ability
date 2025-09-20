@@ -388,24 +388,21 @@
 
             <!-- Video presentation for mobile only - shows directly below heading -->
             <div class="block lg:hidden mt-4 mb-8">
-              <!-- Mobile video container with clean design -->
-              <div class="rounded-2xl w-full max-w-md h-56 sm:h-64 shadow-xl mx-auto">
-                <div class="w-full h-full rounded-lg overflow-hidden relative">
-                  <iframe class="w-full h-full"
-                    src="https://www.youtube.com/embed/kBreKsaIRRU?rel=0&showinfo=0&controls=0&modestbranding=1&frameborder=0&autohide=1"
-                    title="Webinar" frameborder="0" showinfo=0 modestbranding=1 controls=0 rel=0
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                    @load="trackEvent('video_impression', {video_id: 'kBreKsaIRRU', video_title: 'Tax-Free Lifestyle Webinar'})">
-                  </iframe>
-                </div>
+              <!-- Mobile video container with clean design and 16:9 aspect ratio -->
+              <div class="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden w-full max-w-md shadow-xl mx-auto">
+                <iframe class="w-full h-full"
+                  src="https://www.youtube.com/embed/kBreKsaIRRU?rel=0&showinfo=0&controls=0&modestbranding=1&frameborder=0&autohide=1"
+                  title="Webinar" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
               </div>
             </div>
 
             <!-- Enhanced CTA buttons with modern hover effects - mobile optimized -->
             <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <button
-                class="group relative bg-gradient-to-r from-primary to-secondary text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-500 transform hover:scale-105 overflow-hidden shadow-lg shadow-primary/20">
+                class="group relative bg-gradient-to-r from-primary to-secondary text-white px-8 py-2 md:py-4 rounded-xl font-bold text-lg transition-all duration-500 transform hover:scale-105 overflow-hidden shadow-lg shadow-primary/20">
                 <span
                   class="absolute inset-0 w-full h-full bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-50 group-hover:blur-lg transition-all duration-300"></span>
                 <span
@@ -417,7 +414,7 @@
               </button>
 
               <button
-                class="group relative overflow-hidden text-white px-8 py-4 rounded-xl font-semibold text-lg border border-white/10 hover:border-white/30 transition-all duration-300 bg-white/5">
+                class="group relative overflow-hidden text-white px-8 py-2 md:py-4 rounded-xl font-semibold text-lg border border-white/10 hover:border-white/30 transition-all duration-300 bg-white/5">
                 <span
                   class="absolute inset-0 w-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 group-hover:w-full transition-all duration-700"></span>
                 <span class="relative flex items-center justify-center gap-2">
@@ -458,17 +455,14 @@
           <div class="relative px-2 sm:px-0 mt-6 sm:mt-0 hidden lg:block" data-aos="fade-up" data-aos-duration="1000"
             data-aos-delay="200">
             <!-- Video container with clean design - better responsive sizing -->
-            <div class="rounded-2xl sm:rounded-3xl w-full max-w-3xl h-60 sm:h-96 md:h-[30rem] shadow-xl mx-auto z-30">
+            <div class="aspect-w-16 aspect-h-9 rounded-2xl sm:rounded-3xl w-full max-w-3xl shadow-xl mx-auto z-30">
               <!-- YouTube video embed with proper aspect ratio -->
-              <div class="w-full h-full rounded-lg overflow-hidden relative">
-                <iframe class="w-full h-full"
-                  src="https://www.youtube.com/embed/kBreKsaIRRU?rel=0&showinfo=0&controls=0&modestbranding=1&frameborder=0&autohide=1"
-                  title="Webinar" frameborder="0" showinfo=0 modestbranding=1 controls=0 rel=0
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                  @load="trackEvent('video_impression', {video_id: 'kBreKsaIRRU', video_title: 'Tax-Free Lifestyle Webinar'})">
-                </iframe>
-              </div>
+              <iframe class="w-full h-full"
+                src="https://www.youtube.com/embed/kBreKsaIRRU?rel=0&showinfo=0&controls=0&modestbranding=1&frameborder=0&autohide=1"
+                title="Webinar" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+              </iframe>
             </div>
 
             <!-- Key benefit cards below video - desktop responsive layout -->
@@ -1008,7 +1002,7 @@
       <div class="absolute bottom-20 right-10 w-80 h-80 rounded-full bg-primary/5 filter blur-3xl animate-float"
         aria-hidden="true" style="animation-delay: -4s"></div>
 
-      <div class="max-w-7xl mx-auto px-6 sm:px-8 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 relative">
         <!-- Section Header -->
         <div class="text-center mb-12" data-aos="fade-up">
           <div class="inline-block mb-3">
@@ -1254,6 +1248,19 @@
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            <!-- Swiper Navigation and Pagination Controls -->
+            <div class="flex justify-center items-center mt-0 gap-6 ">
+              <div
+                class="swiper-button-prev bg-white/80 hover:bg-white text-primary w-10 h-10 rounded-full flex items-center justify-center shadow-md transition-all duration-300 after:content-[''] after:text-0">
+                <i class="fas fa-chevron-left text-sm"></i>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div
+                class="swiper-button-next bg-white/80 hover:bg-white text-primary w-10 h-10 rounded-full flex items-center justify-center shadow-md transition-all duration-300 after:content-[''] after:text-0">
+                <i class="fas fa-chevron-right text-sm"></i>
               </div>
             </div>
 
@@ -2132,14 +2139,17 @@
           <div class="relative z-30">
             <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center font-display">Reserve Your Free Spot Now</h3>
 
-            <iframe src="https://api.leadconnectorhq.com/widget/form/7KsFOj0XwwJOep73aOFG"
-              style="width:100%;height:100%;border:none;border-radius:15px" id="inline-7KsFOj0XwwJOep73aOFG"
-              data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value=""
-              data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate"
-              data-deactivation-value="" data-form-name="Account Ability Webinar" data-height="702"
-              data-layout-iframe-id="inline-7KsFOj0XwwJOep73aOFG" data-form-id="7KsFOj0XwwJOep73aOFG"
-              title="Account Ability Webinar">
-            </iframe>
+            <!-- Form container with YouTube-like aspect ratio -->
+            <div class="aspect-w-16 aspect-h-9 max-w-3xl mx-auto">
+              <iframe src="https://api.leadconnectorhq.com/widget/form/7KsFOj0XwwJOep73aOFG" style="border:none;"
+                id="inline-7KsFOj0XwwJOep73aOFG" data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow"
+                data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value=""
+                data-deactivation-type="neverDeactivate" data-deactivation-value=""
+                data-form-name="Account Ability Webinar" data-height="550"
+                data-layout-iframe-id="inline-7KsFOj0XwwJOep73aOFG" data-form-id="7KsFOj0XwwJOep73aOFG"
+                title="Account Ability Webinar" class="w-full h-full">
+              </iframe>
+            </div>
             <script src="https://link.msgsndr.com/js/form_embed.js"></script>
 
             <div class="flex items-center gap-2 mt-6 justify-center">
