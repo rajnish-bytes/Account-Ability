@@ -135,17 +135,15 @@ function initCountdownTimer() {
   const countdown = document.querySelector('.webinar-countdown');
   if (!countdown) return;
 
-  // Get target date from data attribute or default to 3 days from now
+  // Get target date from data attribute or default to September 28, 2025
   let targetDateStr = countdown.dataset.date;
   let targetDate;
 
   if (targetDateStr) {
     targetDate = new Date(targetDateStr);
   } else {
-    // Default to 3 days from now at 2pm
-    targetDate = new Date();
-    targetDate.setDate(targetDate.getDate() + 3);
-    targetDate.setHours(14, 0, 0, 0);
+    // Default to September 28, 2025 at 6pm Eastern Time
+    targetDate = new Date('2025-09-28T18:00:00-04:00');
   }
 
   // Update countdown every second

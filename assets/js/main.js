@@ -360,11 +360,8 @@ function initCountdownTimer() {
     return; // Exit if elements don't exist
   }
 
-  // Set the webinar date (3 days from now)
-  const now = new Date();
-  const webinarDate = new Date(now);
-  webinarDate.setDate(webinarDate.getDate() + 3);
-  webinarDate.setHours(18, 0, 0, 0); // 6:00 PM
+  // Set the webinar date to September 28, 2025, Eastern timezone (EDT)
+  const webinarDate = new Date('2025-09-28T18:00:00-04:00'); // 6:00 PM Eastern Time
 
   function updateCountdown() {
     const currentTime = new Date();

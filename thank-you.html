@@ -55,34 +55,11 @@
             body: ['Source Sans Pro', 'sans-serif'],
             accent: ['Lora', 'serif']
           },
-          colors: {
-            primary: {
-              light: '#4F46E5',
-              DEFAULT: '#4338CA',
-              dark: '#3730A3'
-            },
-            accent: {
-              light: '#2563EB',
-              DEFAULT: '#1D4ED8',
-              dark: '#1E40AF'
-            },
-            secondary: {
-              light: '#4F46E5',
-              DEFAULT: '#4338CA',
-              dark: '#3730A3'
-            }
-          },
-          animation: {
-            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-            'float': 'float 6s ease-in-out infinite',
-            'float-delay-1': 'float-delay-1 8s ease-in-out infinite',
-            'float-delay-2': 'float-delay-2 10s ease-in-out infinite',
-            'bounce-slow': 'bounce 3s infinite'
-          }
         },
       },
     }
   </script>
+  <script src="assets/js/tailwind-config.js"></script>
 
   <!-- Deferred JavaScript Libraries -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
@@ -207,7 +184,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
-              <span>October 15, 2025 • 6:00 PM Eastern Time</span>
+              <span>September 28, 2025 • 7:00 PM Eastern Time</span>
             </div>
 
             <div class="flex items-center justify-center gap-2">
@@ -216,13 +193,19 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
               </svg>
-              <span>Google Meet: <span class="font-mono text-green-200">meet.google.com/abc-defg-hij</span></span>
+              <span>
+                Google Meet:
+                <a href="https://meet.google.com/abc-defg-hij" target="_blank" rel="noopener"
+                  class="font-mono text-green-200 underline hover:text-green-100">
+                  meet.google.com/abc-defg-hij
+                </a>
+              </span>
             </div>
           </div>
         </div>
 
         <div class="flex flex-wrap gap-4 justify-center" data-aos="fade-up" data-aos-delay="300">
-          <button onclick="addToCalendar()"
+          <a href="#" target="_blank" rel="noopener"
             class="px-6 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg transition-colors flex items-center gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
@@ -230,7 +213,7 @@
                 d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
             </svg>
             Add to Calendar
-          </button>
+          </a>
 
           <a href="#share"
             class="px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-lg transition-colors flex items-center gap-2">
@@ -274,8 +257,8 @@
             </div>
             <h3 class="text-xl font-bold text-gray-900 mb-3">Preparation Materials</h3>
             <p class="text-gray-600">
-              24 hours before the webinar, you'll receive a preparation email with materials to review to get the most
-              from the session.
+              You’ll get a notification 24 hours before the webinar — make sure to clear your schedule and get your
+              materials ready”
             </p>
           </div>
 
@@ -286,7 +269,7 @@
             </div>
             <h3 class="text-xl font-bold text-gray-900 mb-3">Reminder Notification</h3>
             <p class="text-gray-600">
-              We'll send you a reminder notification 30 minutes before the webinar starts, so you won't miss a thing.
+              We'll send you a reminder notification 60 minutes before the webinar starts, so you won't miss a thing.
             </p>
           </div>
         </div>
@@ -294,7 +277,7 @@
     </section>
 
     <!-- Webinar Preparation Section -->
-    <section class="py-16 bg-white">
+    <section class="py-16 bg-white overflow-x-hidden">
       <div class="max-w-7xl mx-auto px-6 sm:px-8">
         <div class="grid lg:grid-cols-2 gap-16 items-center">
           <div data-aos="fade-right">
@@ -365,7 +348,7 @@
             </ul>
           </div>
 
-          <div class="bg-gray-50 p-8 rounded-2xl shadow-inner" data-aos="fade-left">
+          <div class="bg-gray-50  md:p-8 rounded-2xl shadow-inner" data-aos="fade-left">
             <div class="mb-8">
               <h3 class="text-2xl font-bold text-gray-900 mb-4 font-display">Webinar Preview</h3>
               <p class="text-gray-600">
@@ -440,7 +423,7 @@
             <div class="inline-block bg-white/10 rounded-lg p-4">
               <p class="text-sm text-gray-300 mb-3">Copy this link to share:</p>
               <div class="flex items-center gap-2">
-                <input type="text" value="https://accountabilitynetwork.com/webinar" readonly
+                <input type="text" value="https://www.accountability-network.com/" readonly
                   class="w-full bg-white/5 text-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
                   id="share-link">
                 <button onclick="copyShareLink()"
@@ -514,8 +497,8 @@
             </button>
             <div class="faq-answer overflow-hidden max-h-0 transition-all duration-300">
               <div class="p-6 pt-0 text-gray-600">
-                No problem! We'll send you a recording of the webinar after the event, so you can watch it at your
-                convenience. You'll still get all the valuable insights.
+                No worries! We’ll email you about upcoming webinars, and if the timing works better for you, you can
+                join us then.
               </div>
             </div>
           </div>
@@ -531,8 +514,8 @@
             </button>
             <div class="faq-answer overflow-hidden max-h-0 transition-all duration-300">
               <div class="p-6 pt-0 text-gray-600">
-                The webinar will last 90 minutes, including a 15-minute Q&A session at the end where you can ask our
-                experts your specific questions.
+                The webinar will last 60 minutes including a Q&A session at the end where you can ask your specific
+                questions.
               </div>
             </div>
           </div>
@@ -548,8 +531,9 @@
             </button>
             <div class="faq-answer overflow-hidden max-h-0 transition-all duration-300">
               <div class="p-6 pt-0 text-gray-600">
-                Yes, all attendees will receive a digital resource pack including presentation slides, implementation
-                checklists, and bonus content to help you apply what you learn.
+                No, we won’t be providing digital resources. What we will give you is a clear roadmap to follow, along
+                with guidance on how to implement it. We can also recommend trusted offshore agencies you can work with
+                — but no specific tools or resource packs will be included.
               </div>
             </div>
           </div>
@@ -566,15 +550,15 @@
             <div class="faq-answer overflow-hidden max-h-0 transition-all duration-300">
               <div class="p-6 pt-0 text-gray-600">
                 Our support team will be available before and during the webinar. If you have any issues, email
-                support@accountabilitynetwork.com for immediate assistance.
+                support@iamacct.com for immediate assistance.
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Need Help Banner -->
+    <!-- 
+    Need Help Banner
     <section class="py-12 bg-gradient-to-r from-primary/10 to-accent/10">
       <div class="max-w-4xl mx-auto px-6 sm:px-8 text-center">
         <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4" data-aos="fade-up">
@@ -584,7 +568,7 @@
           Our team is here to make sure you have the best webinar experience possible.
         </p>
         <div class="flex flex-wrap justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
-          <a href="mailto:support@accountabilitynetwork.com"
+          <a href="mailto:support@iamacct.com"
             class="inline-flex items-center justify-center px-6 py-3 bg-primary hover:bg-primary-dark text-white rounded-lg transition-colors gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
@@ -605,259 +589,298 @@
         </div>
       </div>
     </section>
-  </main>
+  </main> -->
 
-  <!-- Footer: Site Information and Legal Details -->
-  <footer class="bg-gray-900 text-white py-12 border-t border-gray-800" itemscope
-    itemtype="https://schema.org/WPFooter">
-    <div class="max-w-7xl mx-auto px-6 sm:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-        <!-- Company Information -->
-        <div>
-          <div class="flex items-center mb-6">
-            <span class="text-2xl font-bold">Account<span class="text-accent">Ability</span></span>
+    <!-- Footer: Site Information and Legal Details -->
+    <footer class="bg-gray-900 text-white py-16 border-t border-gray-800" itemscope
+      itemtype="https://schema.org/WPFooter">
+      <div class="max-w-7xl mx-auto px-6 sm:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-60">
+          <!-- Company Information -->
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-white">Account<span class="text-accent">Ability</span></h3>
+            <p class="text-gray-400 mb-6">Helping accounting firm owners build thriving 7-figure practices without
+              burnout
+              or excessive staffing. Our proven systems help you scale efficiently while maintaining work-life balance.
+            </p>
+
+            <!-- <div class="mt-8">
+            <h4 class="text-lg font-semibold mb-3 text-white">Follow Us</h4>
+            <div class="flex space-x-4">
+              <a href="https://facebook.com/accountabilitynetwork" aria-label="Facebook"
+                class="bg-gray-800 size-12 flex justify-center items-center rounded-full text-gray-400 hover:text-accent hover:bg-gray-700 transition-all">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com/acct_ability" aria-label="Twitter"
+                class="bg-gray-800 size-12 flex justify-center items-center rounded-full text-gray-400 hover:text-accent hover:bg-gray-700 transition-all">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://linkedin.com/company/accountabilitynetwork" aria-label="LinkedIn"
+                class="bg-gray-800 size-12 flex justify-center items-center rounded-full text-gray-400 hover:text-accent hover:bg-gray-700 transition-all">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://instagram.com/accountabilitynetwork" aria-label="Instagram"
+                class="bg-gray-800 size-12 flex justify-center items-center rounded-full text-gray-400 hover:text-accent hover:bg-gray-700 transition-all">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div> -->
+
+
           </div>
-          <p class="text-gray-400 max-w-md mb-6">
-            Helping accounting firm owners build 7-figure businesses without burnout or hiring full-time staff.
+
+          <!-- Contact Information -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4 text-white">Get In Touch</h3>
+            <address class="not-italic mb-8" itemscope itemtype="https://schema.org/Organization">
+              <div class="flex items-end space-x-3 mb-4">
+                <div class="bg-gray-800 p-2 rounded-lg"><i class="fas fa-envelope text-accent"></i></div>
+                <div>
+                  <p class="text-sm text-gray-500">Email us at:</p>
+                  <span class="text-gray-300" itemprop="email">hello@accountabilitynetwork.com</span>
+                </div>
+              </div>
+              <!-- <div class="flex items-start space-x-3 mb-4">
+              <div class="bg-gray-800 p-2 rounded-lg"><i class="fas fa-phone text-accent"></i></div>
+              <div>
+                <p class="text-sm text-gray-500">Call us:</p>
+                <span class="text-gray-300" itemprop="telephone">+1 (555) 123-4567</span>
+              </div>
+            </div>
+            <div class="flex items-start space-x-3">
+              <div class="bg-gray-800 p-2 rounded-lg"><i class="fas fa-map-marker-alt text-accent"></i></div>
+              <div>
+                <p class="text-sm text-gray-500">Our location:</p>
+                <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                  <span class="text-gray-300">
+                    <span itemprop="streetAddress">123 Business Ave</span><br>
+                    <span itemprop="addressLocality">Finance City</span>,
+                    <span itemprop="addressRegion">FC</span>
+                    <span itemprop="postalCode">10001</span>
+                  </span>
+                </div>
+              </div>
+            </div> -->
+            </address>
+          </div>
+        </div>
+
+        <hr class="border-gray-800 my-8">
+
+        <!-- Bottom Footer Area -->
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+          <p class="text-gray-500 text-sm text-center md:text-left">
+            © <span itemprop="copyrightYear">2025</span> <span itemprop="copyrightHolder">Account Ability
+              Network</span>.
+            All rights reserved.
           </p>
-          <div class="flex space-x-4">
-            <a href="#" class="text-gray-400 hover:text-white transition-colors" aria-label="Facebook">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
-              </svg>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-white transition-colors" aria-label="Twitter">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 9.99 9.99 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
-              </svg>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-              </svg>
-            </a>
+          <div class="mt-2 md:mt-0">
+            <p class="text-gray-500 text-xs text-center md:text-right">
+              This webinar is for educational purposes only. Results may vary. Not legal advice.
+              Evaluate outsourcing solutions based on your firm's compliance requirements.
+            </p>
           </div>
         </div>
-
-        <!-- Quick Links -->
-        <div>
-          <h3 class="text-lg font-bold mb-6">Quick Links</h3>
-          <ul class="space-y-3">
-            <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
-            <li><a href="index.html#benefits" class="text-gray-400 hover:text-white transition-colors">Benefits</a></li>
-            <li><a href="index.html#testimonials"
-                class="text-gray-400 hover:text-white transition-colors">Testimonials</a></li>
-            <li><a href="index.html#faq" class="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
-            <li><a href="mailto:support@accountabilitynetwork.com"
-                class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
-          </ul>
-        </div>
       </div>
 
-      <hr class="border-gray-800 my-8">
+      <!-- Structured Data for Local Business -->
+      <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Account Ability Network",
+      "image": "https://accountabilitynetwork.com/assets/images/logo.png",
+      "url": "https://accountabilitynetwork.com",
+      "telephone": "+15551234567",
+      "email": "hello@accountabilitynetwork.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Business Ave",
+        "addressLocality": "Finance City",
+        "addressRegion": "FC",
+        "postalCode": "10001",
+        "addressCountry": "US"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "17:00"
+        }
+      ],
+      "priceRange": "$$$"
+    }
+    </script>
+    </footer>
 
-      <!-- Bottom Footer Area -->
-      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-        <p class="text-gray-500 text-sm text-center md:text-left">
-          &copy; 2025 Account Ability Network. All rights reserved.
-        </p>
-        <div class="mt-2 md:mt-0">
-          <a href="#" class="text-gray-400 hover:text-white transition-colors text-sm mx-3">Privacy Policy</a>
-          <a href="#" class="text-gray-400 hover:text-white transition-colors text-sm mx-3">Terms of Service</a>
-        </div>
-      </div>
-    </div>
-  </footer>
 
-  <!-- Site JavaScript -->
-  <script>
-    // Enable AOS animations
-    document.addEventListener('DOMContentLoaded', function () {
-      // Initialize AOS
-      AOS.init({
-        duration: 800,
-        once: false,
-        mirror: true,
-        offset: 50
+    <!-- Site JavaScript -->
+    <script>
+      // Enable AOS animations
+      document.addEventListener('DOMContentLoaded', function () {
+        // Initialize AOS
+        AOS.init({
+          duration: 800,
+          once: false,
+          mirror: true,
+          offset: 50
+        });
+
+        // Create confetti animation
+        createConfetti();
+
+        // Initialize FAQ toggles
+        initWebinarFAQs();
+
+        // Initialize Share buttons
+        initWebinarShareButtons();
+
+        // Make mobile menu toggle accessible
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuToggle && mobileMenu) {
+          mobileMenuToggle.addEventListener('click', () => {
+            const expanded = mobileMenuToggle.getAttribute('aria-expanded') === 'true';
+            mobileMenuToggle.setAttribute('aria-expanded', !expanded);
+            mobileMenu.classList.toggle('hidden');
+          });
+        }
       });
 
       // Create confetti animation
-      createConfetti();
+      function createConfetti() {
+        const container = document.getElementById('confetti-container');
+        const confettiCount = 100;
+        const colors = ['#4F46E5', '#2563EB', '#1D4ED8', '#60A5FA', '#93C5FD'];
 
-      // Initialize FAQ toggles
-      initWebinarFAQs();
+        for (let i = 0; i < confettiCount; i++) {
+          const confetti = document.createElement('div');
+          confetti.classList.add('confetti');
 
-      // Initialize Share buttons
-      initWebinarShareButtons();
+          // Randomize confetti properties
+          const size = Math.random() * 8 + 4; // 4-12px
+          const color = colors[Math.floor(Math.random() * colors.length)];
+          const left = Math.random() * 100; // Random position 0-100%
+          const animationDuration = Math.random() * 3 + 2; // 2-5s
+          const animationDelay = Math.random() * 2; // 0-2s
 
-      // Make mobile menu toggle accessible
-      const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
-      const mobileMenu = document.getElementById('mobile-menu');
+          // Set styles
+          confetti.style.width = `${size}px`;
+          confetti.style.height = `${size}px`;
+          confetti.style.backgroundColor = color;
+          confetti.style.left = `${left}%`;
+          confetti.style.animationDuration = `${animationDuration}s`;
+          confetti.style.animationDelay = `${animationDelay}s`;
 
-      if (mobileMenuToggle && mobileMenu) {
-        mobileMenuToggle.addEventListener('click', () => {
-          const expanded = mobileMenuToggle.getAttribute('aria-expanded') === 'true';
-          mobileMenuToggle.setAttribute('aria-expanded', !expanded);
-          mobileMenu.classList.toggle('hidden');
-        });
-      }
-    });
+          // Add random rotation
+          confetti.style.transform = `rotate(${Math.random() * 360}deg)`;
 
-    // Create confetti animation
-    function createConfetti() {
-      const container = document.getElementById('confetti-container');
-      const confettiCount = 100;
-      const colors = ['#4F46E5', '#2563EB', '#1D4ED8', '#60A5FA', '#93C5FD'];
+          // Make some confetti different shapes
+          if (Math.random() > 0.7) {
+            confetti.style.borderRadius = '50%';
+          } else if (Math.random() > 0.5) {
+            confetti.style.borderRadius = '2px';
+          }
 
-      for (let i = 0; i < confettiCount; i++) {
-        const confetti = document.createElement('div');
-        confetti.classList.add('confetti');
-
-        // Randomize confetti properties
-        const size = Math.random() * 8 + 4; // 4-12px
-        const color = colors[Math.floor(Math.random() * colors.length)];
-        const left = Math.random() * 100; // Random position 0-100%
-        const animationDuration = Math.random() * 3 + 2; // 2-5s
-        const animationDelay = Math.random() * 2; // 0-2s
-
-        // Set styles
-        confetti.style.width = `${size}px`;
-        confetti.style.height = `${size}px`;
-        confetti.style.backgroundColor = color;
-        confetti.style.left = `${left}%`;
-        confetti.style.animationDuration = `${animationDuration}s`;
-        confetti.style.animationDelay = `${animationDelay}s`;
-
-        // Add random rotation
-        confetti.style.transform = `rotate(${Math.random() * 360}deg)`;
-
-        // Make some confetti different shapes
-        if (Math.random() > 0.7) {
-          confetti.style.borderRadius = '50%';
-        } else if (Math.random() > 0.5) {
-          confetti.style.borderRadius = '2px';
+          container.appendChild(confetti);
         }
-
-        container.appendChild(confetti);
       }
-    }
 
-    // Initialize webinar-specific FAQs
-    function initWebinarFAQs() {
-      const faqItems = document.querySelectorAll('.webinar-faq');
-      if (!faqItems.length) return;
+      // Initialize webinar-specific FAQs
+      function initWebinarFAQs() {
+        const faqItems = document.querySelectorAll('.webinar-faq');
+        if (!faqItems.length) return;
 
-      faqItems.forEach(item => {
-        const question = item.querySelector('.faq-question');
-        const answer = item.querySelector('.faq-answer');
-        const icon = question.querySelector('svg, .faq-icon');
+        faqItems.forEach(item => {
+          const question = item.querySelector('.faq-question');
+          const answer = item.querySelector('.faq-answer');
+          const icon = question.querySelector('svg, .faq-icon');
 
-        // Add click event to toggle answer
-        question.addEventListener('click', function () {
-          const isOpen = item.classList.contains('active');
+          // Add click event to toggle answer
+          question.addEventListener('click', function () {
+            const isOpen = item.classList.contains('active');
 
-          // Close all FAQs
-          faqItems.forEach(otherItem => {
-            otherItem.classList.remove('active');
-            otherItem.querySelector('.faq-answer').style.maxHeight = '0';
+            // Close all FAQs
+            faqItems.forEach(otherItem => {
+              otherItem.classList.remove('active');
+              otherItem.querySelector('.faq-answer').style.maxHeight = '0';
 
-            const otherIcon = otherItem.querySelector('svg, .faq-icon');
-            if (otherIcon) {
-              otherIcon.classList.remove('rotate-180');
+              const otherIcon = otherItem.querySelector('svg, .faq-icon');
+              if (otherIcon) {
+                otherIcon.classList.remove('rotate-180');
+              }
+            });
+
+            // Open/close current FAQ
+            if (!isOpen) {
+              item.classList.add('active');
+              answer.style.maxHeight = answer.scrollHeight + 'px';
+
+              if (icon) {
+                icon.classList.add('rotate-180');
+              }
             }
           });
+        });
+      }
 
-          // Open/close current FAQ
-          if (!isOpen) {
-            item.classList.add('active');
-            answer.style.maxHeight = answer.scrollHeight + 'px';
+      // Initialize webinar share buttons
+      function initWebinarShareButtons() {
+        const shareButtons = document.querySelectorAll('.share-button');
+        if (!shareButtons.length) return;
 
-            if (icon) {
-              icon.classList.add('rotate-180');
+        shareButtons.forEach(button => {
+          button.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const platform = button.dataset.platform;
+            const shareUrl = window.location.href;
+            const title = document.title;
+
+            let url = '';
+
+            switch (platform) {
+              case 'twitter':
+                url = `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent('I just registered for the 7-Figure Accounting Firm webinar! Join me:')}`;
+                break;
+              case 'facebook':
+                url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`;
+                break;
+              case 'linkedin':
+                url = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`;
+                break;
+              case 'email':
+                url = `mailto:?subject=${encodeURIComponent('Join me for this Accounting Firm Growth Webinar')}&body=${encodeURIComponent(`I just registered for this valuable webinar on scaling accounting firms to 7 figures without burnout, and thought you might be interested too: ${shareUrl}`)}`;
+                break;
             }
-          }
+
+            if (url) {
+              window.open(url, '_blank');
+            }
+          });
         });
-      });
-    }
+      }
 
-    // Initialize webinar share buttons
-    function initWebinarShareButtons() {
-      const shareButtons = document.querySelectorAll('.share-button');
-      if (!shareButtons.length) return;
+      // Copy share link function
+      function copyShareLink() {
+        const shareLink = document.getElementById('share-link');
+        const copyMessage = document.getElementById('copy-message');
 
-      shareButtons.forEach(button => {
-        button.addEventListener('click', function (e) {
-          e.preventDefault();
+        shareLink.select();
+        document.execCommand('copy');
 
-          const platform = button.dataset.platform;
-          const shareUrl = window.location.href;
-          const title = document.title;
+        // Show confirmation message
+        copyMessage.classList.remove('hidden');
 
-          let url = '';
+        // Hide after 3 seconds
+        setTimeout(() => {
+          copyMessage.classList.add('hidden');
+        }, 3000);
+      }
 
-          switch (platform) {
-            case 'twitter':
-              url = `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent('I just registered for the 7-Figure Accounting Firm webinar! Join me:')}`;
-              break;
-            case 'facebook':
-              url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`;
-              break;
-            case 'linkedin':
-              url = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`;
-              break;
-            case 'email':
-              url = `mailto:?subject=${encodeURIComponent('Join me for this Accounting Firm Growth Webinar')}&body=${encodeURIComponent(`I just registered for this valuable webinar on scaling accounting firms to 7 figures without burnout, and thought you might be interested too: ${shareUrl}`)}`;
-              break;
-          }
-
-          if (url) {
-            window.open(url, '_blank');
-          }
-        });
-      });
-    }
-
-    // Copy share link function
-    function copyShareLink() {
-      const shareLink = document.getElementById('share-link');
-      const copyMessage = document.getElementById('copy-message');
-
-      shareLink.select();
-      document.execCommand('copy');
-
-      // Show confirmation message
-      copyMessage.classList.remove('hidden');
-
-      // Hide after 3 seconds
-      setTimeout(() => {
-        copyMessage.classList.add('hidden');
-      }, 3000);
-    }
-
-    // Add to calendar function
-    function addToCalendar() {
-      // Format for Google Calendar
-      const formatDate = (date) => {
-        return date.toISOString().replace(/-|:|\.\d+/g, '');
-      };
-
-      // Set webinar date (October 15, 2025 at 6:00 PM ET)
-      const startDate = new Date('2025-10-15T18:00:00-05:00');
-      // Webinar duration: 1.5 hours
-      const endDate = new Date(startDate.getTime() + (90 * 60 * 1000));
-
-      const webinarTitle = 'Build a 7-Figure Accounting Firm Without Burnout';
-      const webinarDetails = 'Join us to discover how to scale your accounting practice without hiring full-time staff. Click the Google Meet link to join: meet.google.com/abc-defg-hij';
-
-      const googleCalendarUrl = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(webinarTitle)}&dates=${formatDate(startDate)}/${formatDate(endDate)}&details=${encodeURIComponent(webinarDetails)}&location=${encodeURIComponent('Online - Google Meet')}&ctz=America/New_York`;
-
-      // Open Google Calendar in new tab
-      window.open(googleCalendarUrl, '_blank');
-    }
-  </script>
+    </script>
 
 </body>
 
