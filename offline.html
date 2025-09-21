@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You're Offline - Account Ability Network</title>
+  <style>
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+      background-color: #f9fafb;
+      color: #1f2937;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 1rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    }
+
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      color: #111827;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    .icon {
+      font-size: 4rem;
+      margin-bottom: 1.5rem;
+      color: #6366f1;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #4f46e5;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    .btn:hover {
+      background-color: #4338ca;
+      transform: translateY(-2px);
+    }
+
+    .cached-content {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .signal-icon {
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      background-color: #f3f4f6;
+      border-radius: 50%;
+      position: relative;
+      margin-bottom: 2rem;
+    }
+
+    .signal-icon::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 40px;
+      height: 40px;
+      border: 4px solid #6366f1;
+      border-radius: 50%;
+      opacity: 0.3;
+    }
+
+    .signal-icon::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 60px;
+      border: 4px solid #6366f1;
+      border-radius: 50%;
+      opacity: 0.15;
+    }
+
+    .signal-line {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 20px;
+      height: 4px;
+      background-color: #6366f1;
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="signal-icon">
+      <div class="signal-line"></div>
+    </div>
+    <h1>You're currently offline</h1>
+    <p>It seems you've lost your internet connection. Don't worry, you can still access some parts of our site that have
+      been cached.</p>
+
+    <button class="btn" id="reload-btn">Try Again</button>
+
+    <div class="cached-content">
+      <h2>Available Offline Content</h2>
+      <p>You can still access our main pages and information about our services. When your connection is restored,
+        you'll automatically get the latest content.</p>
+      <p>If you were in the middle of filling out a form, your data will be saved and automatically submitted once
+        you're back online.</p>
+    </div>
+  </div>
+
+  <script>
+    // Try to reload the page when the button is clicked
+    document.getElementById('reload-btn').addEventListener('click', function () {
+      window.location.reload();
+    });
+
+    // Listen for online events
+    window.addEventListener('online', function () {
+      window.location.reload();
+    });
+  </script>
+</body>
+
+</html>

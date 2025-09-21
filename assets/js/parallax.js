@@ -4,13 +4,13 @@
 function initEnhancedParallaxSections() {
   // Check if we're on mobile (screen width less than 768px)
   const isMobile = window.innerWidth < 768;
-  
+
   // Only apply parallax effects on desktop (non-mobile) screens
   if (isMobile) {
     console.log('Mobile detected: Enhanced parallax effects disabled');
     return; // Exit the function early on mobile devices
   }
-  
+
   const parallaxSections = document.querySelectorAll('section');
 
   // Create a ScrollTrigger for each section
@@ -108,16 +108,16 @@ function initEnhancedParallaxSections() {
 function initParallaxSections() {
   // Register ScrollTrigger plugin with GSAP
   gsap.registerPlugin(ScrollTrigger);
-  
+
   // Check if we're on mobile (screen width less than 768px)
   const isMobile = window.innerWidth < 768;
-  
+
   // Only apply parallax effects on desktop (non-mobile) screens
   if (isMobile) {
     console.log('Mobile detected: Parallax effects disabled');
     return; // Exit the function early on mobile devices
   }
-  
+
   // Create parallax effect specifically for the hero section
   const heroSection = document.getElementById('hero-section');
   if (heroSection) {
@@ -286,10 +286,10 @@ function initParallaxSections() {
 // Add mouse-based parallax effect for interactive movement
 function initMouseParallax(section) {
   if (!section) return;
-  
+
   // Check if we're on mobile (screen width less than 768px)
   const isMobile = window.innerWidth < 768;
-  
+
   // Only apply mouse parallax effects on desktop (non-mobile) screens
   if (isMobile) {
     console.log('Mobile detected: Mouse parallax effects disabled');
@@ -407,13 +407,13 @@ function initMouseParallax(section) {
 function createSpotlight() {
   // Check if we're on mobile (screen width less than 768px)
   const isMobile = window.innerWidth < 768;
-  
+
   // Only apply spotlight effects on desktop (non-mobile) screens
   if (isMobile) {
     console.log('Mobile detected: Spotlight effects disabled');
     return null; // Don't create spotlight on mobile
   }
-  
+
   const spotlight = document.createElement('div');
   spotlight.classList.add('cursor-spotlight', 'fixed', 'pointer-events-none', 'z-50',
     'opacity-0', 'w-[300px]', 'h-[300px]', 'rounded-full');

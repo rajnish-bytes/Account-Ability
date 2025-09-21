@@ -1,0 +1,79 @@
+# Enable browser caching for static resources
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Default expiry: 1 month
+  ExpiresDefault "access plus 1 month"
+
+  # CSS and JavaScript: 1 year
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+
+  # Images: 1 year
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+
+  # Fonts: 1 year
+  ExpiresByType font/ttf "access plus 1 year"
+  ExpiresByType font/otf "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType application/font-woff "access plus 1 year"
+  ExpiresByType application/x-font-ttf "access plus 1 year"
+  ExpiresByType application/x-font-otf "access plus 1 year"
+</IfModule>
+
+# Add Cache-Control headers
+<IfModule mod_headers.c>
+  # Cache all files for 1 month by default
+  <FilesMatch "\.(html|htm|xml|txt|css|js|json|png|jpg|jpeg|gif|webp|svg|ico|ttf|otf|woff|woff2)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+
+  # CSS and JavaScript: 1 year
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # Images: 1 year
+  <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # Fonts: 1 year
+  <FilesMatch "\.(ttf|otf|woff|woff2)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>
+
+# Enable GZIP compression
+<IfModule mod_deflate.c>
+  # Compress HTML, CSS, JavaScript, Text, XML, fonts
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/x-javascript application/json application/xml application/rss+xml
+
+  # Compress fonts
+  AddOutputFilterByType DEFLATE font/ttf font/otf font/woff font/woff2 application/font-woff application/x-font-ttf application/x-font-otf
+
+  # Remove browser bugs
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+  Header append Vary User-Agent
+</IfModule>
+
+# Set security headers
+<IfModule mod_headers.c>
+  # Protect against XSS attacks
+  Header set X-XSS-Protection "1; mode=block"
+  
+  # Prevent MIME type sniffing
+  Header set X-Content-Type-Options "nosniff"
+  
+  # Referrer Policy
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>

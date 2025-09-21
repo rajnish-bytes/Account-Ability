@@ -33,72 +33,29 @@
   <link rel="icon" type="image/png" href="assets/images/og-image.png">
   <link rel="apple-touch-icon" href="assets/images/og-image.png">
 
-  <!-- Structured Data / Schema.org -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Account Ability Network",
-    "description": "Helping accounting firm owners build 7-figure businesses without burnout or hiring full-time staff.",
-    "url": "https://accountabilitynetwork.com",
-    "logo": "https://accountabilitynetwork.com/assets/images/og-image.png",
-    "sameAs": [
-      "https://www.facebook.com/accountabilitynetwork",
-      "https://www.linkedin.com/company/accountabilitynetwork",
-      "https://www.instagram.com/accountabilitynetwork"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "123 Business Ave",
-      "addressLocality": "Finance City",
-      "addressRegion": "FC",
-      "postalCode": "10001",
-      "addressCountry": "US"
-    },
-    "event": {
-      "@type": "WebinarEvent",
-      "name": "7-Figure Accounting Firm Without Burnout Webinar",
-      "startDate": "2025-09-28T18:00:00-04:00",
-      "endDate": "2025-09-28T19:30:00-04:00",
-      "eventStatus": "EventScheduled",
-      "eventAttendanceMode": "OnlineEventAttendanceMode",
-      "location": {
-        "@type": "VirtualLocation",
-        "url": "https://www.accountability-network.com/webinar"
-      },
-      "organizer": {
-        "@type": "Organization",
-        "name": "Account Ability Network",
-        "url": "https://accountabilitynetwork.com"
-      },
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD",
-        "availability": "LimitedAvailability",
-        "url": "https://www.accountability-network.com/webinar-registration"
-      }
-    }
-  }
-  </script>
+  <!-- Structured Data / Schema.org moved to the end of the body for optimization -->
 
   <!-- Preloading Critical Resources -->
   <link rel="preload" href="assets/css/styles.css" as="style">
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+  <link rel="preload" href="assets/js/main.js" as="script">
+  <link rel="preload" href="assets/js/utils.js" as="script">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" media="print" onload="this.media='all'">
 
   <!-- Stylesheets -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" media="print"
+    onload="this.media='all'">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" media="print"
+    onload="this.media='all'">
   <link rel="stylesheet" href="assets/css/styles.css">
 
   <!-- Critical JavaScript -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com" defer></script>
   <script>
     tailwind.config = {
       theme: {
@@ -115,7 +72,7 @@
       },
     }
   </script>
-  <script src="assets/js/tailwind-config.js"></script>
+  <script src="assets/js/tailwind-config.js" defer></script>
 
   <!-- Deferred JavaScript Libraries -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
@@ -370,9 +327,9 @@
               class="text-3xl sm:text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 sm:mb-8 tracking-tight hero-heading leading-tight"
               data-text="7-Figure Accounting Firm">
               How to Scale a
-                <span class="gradient-text relative inline-block font-black tracking-tight leading-tight">
-                  7-Figure Firm
-                </span>
+              <span class="gradient-text relative inline-block font-black tracking-tight leading-tight">
+                7-Figure Firm
+              </span>
               <span>Without Hiring Full-Time Staff or Burning Out</span>
             </h1>
 
@@ -391,7 +348,7 @@
               <div class="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden w-full max-w-full shadow-xl mx-auto">
                 <iframe class="w-full h-full min-h-[220px] sm:min-h-[320px]"
                   src="https://www.youtube.com/embed/Vv9BWTAAf4Q?rel=0&showinfo=0&controls=0&modestbranding=1&frameborder=0&autohide=1"
-                  title="Webinar" frameborder="0"
+                  title="Webinar" frameborder="0" loading="lazy"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
                   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
@@ -461,7 +418,7 @@
               <!-- YouTube video embed with responsive aspect ratio -->
               <iframe class="w-full h-full min-h-[400px]"
                 src="https://www.youtube.com/embed/Vv9BWTAAf4Q?rel=0&showinfo=0&controls=0&modestbranding=1&frameborder=0&autohide=1"
-                title="Webinar" frameborder="0"
+                title="Webinar" frameborder="0" loading="lazy"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
               </iframe>
@@ -1026,24 +983,24 @@
           <div class="absolute -top-0 left-1/4 transform -translate-x-1/2 z-20 animate-float-delay-1"
             aria-hidden="true">
             <img src="https://randomuser.me/api/portraits/women/44.jpg" alt=""
-              class="w-20 h-20 rounded-full border-4 border-white shadow-lg" />
+              class="w-20 h-20 rounded-full border-4 border-white shadow-lg" width="80" height="80" loading="lazy" />
           </div>
           <div class="absolute top-2/3 -left-10 z-20 animate-float-delay-2" aria-hidden="true">
             <img src="https://randomuser.me/api/portraits/men/32.jpg" alt=""
-              class="w-16 h-16 rounded-full border-4 border-white shadow-lg" />
+              class="w-16 h-16 rounded-full border-4 border-white shadow-lg" width="64" height="64" loading="lazy" />
           </div>
           <div class="absolute -bottom-10 left-1/3 z-20 animate-float" aria-hidden="true">
             <img src="https://randomuser.me/api/portraits/women/65.jpg" alt=""
-              class="w-14 h-14 rounded-full border-4 border-white shadow-lg" />
+              class="w-14 h-14 rounded-full border-4 border-white shadow-lg" width="56" height="56" loading="lazy" />
           </div>
           <div class="absolute top-2/4 -right-8 z-20 animate-float-delay-1" aria-hidden="true">
             <img src="https://randomuser.me/api/portraits/men/67.jpg" alt=""
-              class="w-16 h-16 rounded-full border-4 border-white shadow-lg" />
+              class="w-16 h-16 rounded-full border-4 border-white shadow-lg" width="64" height="64" loading="lazy" />
           </div>
           <div class="absolute -top-12 md:right-40 right-10 transform -translate-x-1/2 z-20 animate-float-delay-2"
             aria-hidden="true">
             <img src="https://randomuser.me/api/portraits/women/94.jpg" alt=""
-              class="w-24 h-24 rounded-full border-4 border-white shadow-lg" />
+              class="w-24 h-24 rounded-full border-4 border-white shadow-lg" width="96" height="96" loading="lazy" />
           </div>
 
           <!-- Swiper container with structured data markup -->
@@ -1064,7 +1021,8 @@
                     <!-- Reviewer Information -->
                     <div class="mb-6">
                       <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Photo of Alex Martin"
-                        class="w-20 h-20 rounded-full border-4 border-white shadow-lg mx-auto mb-4" itemprop="image" />
+                        class="w-20 h-20 rounded-full border-4 border-white shadow-lg mx-auto mb-4" itemprop="image"
+                        width="80" height="80" loading="lazy" />
                       <h4 class="font-bold text-xl text-gray-800" itemprop="author" itemscope
                         itemtype="https://schema.org/Person">
                         <span itemprop="name">Alex Martin</span>
@@ -1114,7 +1072,8 @@
                     <!-- Reviewer Information -->
                     <div class="mb-6">
                       <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Photo of Robert Miller"
-                        class="w-20 h-20 rounded-full border-4 border-white shadow-lg mx-auto mb-4" itemprop="image" />
+                        class="w-20 h-20 rounded-full border-4 border-white shadow-lg mx-auto mb-4" itemprop="image"
+                        width="80" height="80" loading="lazy" />
                       <h4 class="font-bold text-xl text-gray-800" itemprop="author" itemscope
                         itemtype="https://schema.org/Person">
                         <span itemprop="name">Robert Miller</span>
@@ -1165,7 +1124,8 @@
                     <!-- Reviewer Information -->
                     <div class="mb-6">
                       <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Photo of Sarah Henderson"
-                        class="w-20 h-20 rounded-full border-4 border-white shadow-lg mx-auto mb-4" itemprop="image" />
+                        class="w-20 h-20 rounded-full border-4 border-white shadow-lg mx-auto mb-4" itemprop="image"
+                        width="80" height="80" loading="lazy" />
                       <h4 class="font-bold text-xl text-gray-800" itemprop="author" itemscope
                         itemtype="https://schema.org/Person">
                         <span itemprop="name">Sarah Henderson</span>
@@ -1216,7 +1176,8 @@
                     <!-- Reviewer Information -->
                     <div class="mb-6">
                       <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Photo of David Thompson"
-                        class="w-20 h-20 rounded-full border-4 border-white shadow-lg mx-auto mb-4" itemprop="image" />
+                        class="w-20 h-20 rounded-full border-4 border-white shadow-lg mx-auto mb-4" itemprop="image"
+                        width="80" height="80" loading="lazy" />
                       <h4 class="font-bold text-xl text-gray-800" itemprop="author" itemscope
                         itemtype="https://schema.org/Person">
                         <span itemprop="name">David Thompson</span>
@@ -1802,7 +1763,8 @@
                 <div class="relative overflow-hidden rounded-2xl shadow-lg">
                   <img src="./assets/images/Steve Headshot.jpg"
                     alt=" Photo of Steve Lott, Accounting Practice Growth Expert"
-                    class="w-full h-96 object-cover object-top-left" itemprop="image">
+                    class="w-full h-96 object-cover object-top-left" itemprop="image" width="600" height="384"
+                    loading="lazy">
                 </div>
               </div>
 
@@ -1913,9 +1875,10 @@
                       class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/30 to-transparent transform skew-x-12"
                       aria-hidden="true">
                     </div>
-                    <img src="./assets/images/Steve Headshot.jpg" alt="Photo of Steve Lott, Accounting Practice Growth Expert"
+                    <img src="./assets/images/Steve Headshot.jpg"
+                      alt="Photo of Steve Lott, Accounting Practice Growth Expert"
                       class="w-full h-[500px] object-cover object-center transform transition-transform duration-700 scale-100 group-hover:scale-110"
-                      itemprop="image">
+                      itemprop="image" width="800" height="500" loading="lazy">
                   </div>
 
                   <!-- Credentials badge -->
@@ -1976,7 +1939,8 @@
                       class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/30 to-transparent transform skew-x-12">
                     </div>
                     <img src="./assets/images/iBRAHIM.jpg" alt="Ibrahim Mohammed"
-                      class="w-full h-[500px] object-cover object-top transform transition-transform duration-700 scale-100 group-hover:scale-110">
+                      class="w-full h-[500px] object-cover object-top transform transition-transform duration-700 scale-100 group-hover:scale-110"
+                      width="800" height="500" loading="lazy">
                   </div>
 
                   <!-- Stats badge -->
@@ -2019,7 +1983,8 @@
               <!-- Mobile Image - Only shown on mobile below the host name -->
               <div class="block lg:hidden host-mobile-image">
                 <div class="relative overflow-hidden rounded-2xl shadow-lg">
-                  <img src="./assets/images/iBRAHIM.jpg" alt="Ibrahim Mohammed" class="w-full h-96 object-cover object-top">
+                  <img src="./assets/images/iBRAHIM.jpg" alt="Ibrahim Mohammed"
+                    class="w-full h-96 object-cover object-top" width="600" height="384" loading="lazy">
                 </div>
               </div>
 
@@ -2149,10 +2114,10 @@
                 data-deactivation-type="neverDeactivate" data-deactivation-value=""
                 data-form-name="Account Ability Webinar" data-height="550"
                 data-layout-iframe-id="inline-7KsFOj0XwwJOep73aOFG" data-form-id="7KsFOj0XwwJOep73aOFG"
-                title="Account Ability Webinar" class="w-full h-full">
+                title="Account Ability Webinar" class="w-full h-full" loading="lazy">
               </iframe>
             </div>
-            <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+            <script src="https://link.msgsndr.com/js/form_embed.js" async></script>
 
             <div class="flex items-center gap-2 mt-6 justify-center">
               <div class="flex -space-x-2">
@@ -2421,16 +2386,16 @@
   </script>
 
   <!-- Core Functionality Modules -->
-  <script src="assets/js/utils.js"></script>
-  <script src="assets/js/animations.js"></script>
-  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/utils.js" defer></script>
+  <script src="assets/js/animations.js" defer></script>
+  <script src="assets/js/forms.js" defer></script>
 
   <!-- Feature Specific Modules -->
-  <script src="assets/js/webinar.js"></script>
-  <script src="assets/js/parallax.js"></script>
+  <script src="assets/js/webinar.js" defer></script>
+  <script src="assets/js/parallax.js" defer></script>
 
   <!-- Main Application Script (should be loaded last) -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
 
   <!-- Accessibility Enhancements -->
   <script>
@@ -2456,6 +2421,58 @@
       }
     });
   </script>
+
+  <!-- Structured Data / Schema.org (moved to end of body for optimization) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Account Ability Network",
+    "description": "Helping accounting firm owners build 7-figure businesses without burnout or hiring full-time staff.",
+    "url": "https://accountabilitynetwork.com",
+    "logo": "https://accountabilitynetwork.com/assets/images/og-image.png",
+    "sameAs": [
+      "https://www.facebook.com/accountabilitynetwork",
+      "https://www.linkedin.com/company/accountabilitynetwork",
+      "https://www.instagram.com/accountabilitynetwork"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Business Ave",
+      "addressLocality": "Finance City",
+      "addressRegion": "FC",
+      "postalCode": "10001",
+      "addressCountry": "US"
+    },
+    "event": {
+      "@type": "WebinarEvent",
+      "name": "7-Figure Accounting Firm Without Burnout Webinar",
+      "startDate": "2025-09-28T18:00:00-04:00",
+      "endDate": "2025-09-28T19:30:00-04:00",
+      "eventStatus": "EventScheduled",
+      "eventAttendanceMode": "OnlineEventAttendanceMode",
+      "location": {
+        "@type": "VirtualLocation",
+        "url": "https://www.accountability-network.com/webinar"
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "Account Ability Network",
+        "url": "https://accountabilitynetwork.com"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "LimitedAvailability",
+        "url": "https://www.accountability-network.com/webinar-registration"
+      }
+    }
+  }
+  </script>
+
+  <!-- Service Worker Registration -->
+  <script src="assets/js/sw-register.js" defer></script>
 </body>
 
 </html>
